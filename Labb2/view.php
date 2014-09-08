@@ -2,8 +2,6 @@
     
 namespace view;
 
-require_once 'model.php';
-
 class View{
 	
 	/**
