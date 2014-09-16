@@ -25,6 +25,7 @@ bara meddela om nya bilder som de laddat upp.
 5.	Medlemmen lägger upp en post på systemets centrala platts.
 6.	Medlemmen ändrar något i sin gamla post.
 7.	Medlemmen tar bort sin gamla post.
+
 ###Admin
 (Har samma möjligheter som en vanlig användare)
 1.	Admin ändrar i en medlems post.
