@@ -28,6 +28,7 @@ bara meddela om nya bilder som de laddat upp.
 
 ###Admin
 (Har samma möjligheter som en vanlig användare)
+
 1.	Admin ändrar i en medlems post.
 2.	Admin tar bort en medlems post.
 3.	Admin tar bort en medlems bild ifrån galleri.
