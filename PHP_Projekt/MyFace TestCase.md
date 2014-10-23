@@ -207,6 +207,7 @@
 3. Klicka på Log in
 
 **Output:**
+
 1. Systemet presenterar "Please avoid using taggs".
 2. Ej inloggad
 
