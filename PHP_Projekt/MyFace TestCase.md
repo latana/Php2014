@@ -607,18 +607,74 @@
 2. Ingen post är ändrad.
 
 
-Ändra lösenord - Userpage
+### Testfall 6.1 Misslyckad ändring av lösenord. Postar med ett blankt fält.
 
-Postar med ett blankt fält.
-Resultat Systemet presenterar “Password is missing”.
-Postar med whitespace.
-Resultat Systemet presenterar "Invalid letters in password".
-Postar med taggar.
-Resultat Systemet presenterar "Invalid letters in password"
-Postar med 5 eller minre bokstäver.
-Result Systemet presenterar "At least 6 letters in your password".
-Postar med giltiga värden.
+**Input:**
+
+1. Navigera till userpage
+2. Tryck på Change Password knappen
+3. Popup ruta visas.
+4. Klicka på Update.
+
+**Output:**
+
+1. Popup fönstret försvinner
+2. Systemet presenterar “Password is missing”.
+
+### Testfall 6.2 Misslyckad ändring av lösenord. Postar med whitespace.
+
+**Input:**
+
+1. Navigera till userpage
+2. Tryck på Change Password knappen
+3. Popup ruta visas.
+4. New Password "       "
+4. Klicka på Update.
+
+**Output:**
+
+1. Popup fönstre försvinner
+2. Systemet presenterar "Invalid letters in password".
+
+### Testfall 6.3 Misslyckad ändring av lösenord. Postar med taggar.
+
+**Input:**
+
+1. Tryck på Change Password knappen
+2. Popup ruta visas
+3. New Password "<tagg>Password</tagg>"
+4. Klicka på Update
+
+**Output:**
+
+1. Popup rutan försvinner
+2. Systemet presenterar "Invalid letters in password"
+
+### Testfall 6.4 Misslyckad ändring av lösenord. För kort lösenord.
+
+**Input:**
+
+1. Tryck på Change Password knappen
+2. Popup ruta visas
+3. New Password "pass"
+4. Klicka på Update
+
+**Output:**
+
+1. popuprutan försvinner
+2. Systemet presenterar "At least 6 letters in your password".
+
+### Testfall 6.5 Lyckad ändring ut av lösenord
+
+**Input:**
+
+1. Tryck på Change Password knappen
+2. Popup ruta visas
+3. New Password "Password"
+4. Klicka på Update
+
 Resultat Systemet presenterar "The new password have been saved".
+
 
 Ändra Profilbild
 Laddar upp en giltig bild och trycker Upload New.
