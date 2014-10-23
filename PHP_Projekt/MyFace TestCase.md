@@ -167,6 +167,7 @@
 2. Klicka på Log in
 
 **Output:**
+
 1. Systemet presenterar "Username is missing".
 2. Ej inloggad
 
