@@ -389,19 +389,91 @@
 1. Kommentaren blir postad med bilden.
 
 
+### Testfall 4.1 Delete post
 
-Klickar på delete.
-Resultat Både bild och kommentar tas bort Systemet presenterar “Your post has been deleted”.
-Klickar på delete. Ändrar den gömda knappens value till ett annat existerande och klickar på Delete
-Resultat Fönstret försvinner och ingen post är borttagen.
-Klickar på edit.
-Resultat Ett popup fönster uppenbarar sig med en textbox med text på den post som skulle ändras.
-Klickar på edit, ändrar kommentaren i fönstret och klickar på Edit Post.
-Resultat Systemet presenterar “Your post has been updated”.
-Trycker på edit, ändrar den gömda knappens value till ett annat existerande, ändrar posten och klickar på Edit Post.
-Resultat Fönstret försvinner och ingen post är ändrad.
-Trycker på edit,ändrar innehållet i fältet och klickar på X knappen.
-Resultat Fönstret försvinner och posten är inte ändrad.
+**Input:**
+
+1. Lägg upp en post
+2. Klickar på delete knappen i posten.
+
+**Output:**
+
+1. Systemet presenterar “Your post has been deleted”.
+2. Både bild och kommentar tas bort.
+
+### Testfall 4.2 Misslyckad delete av andras post
+
+**Input**
+
+1. Lägg upp 2 poster från två olika användare
+2. Logga in med den senaste
+2. Högerklicka på delete knappen på din senaste post
+3. Välj "Inspect element"
+4. Hitta den gömda delete knappen
+5. Ändra dess value med en siffra mindre tex 90 till 89.
+6. Tryck på delete knappen.
+
+**Output:**
+
+1. Ingen post är borttagen
+
+### Testfall 5.1 Klickar på edit
+
+**Input:**
+
+1. Lägg upp en post
+2. Tryck på Edit i posten
+
+**Output:**
+
+1. Popup fönster visas 
+2. Textbox med text av den post som skulle ändras.
+
+### Testfall 5.2 Lyckad ändrad kommentar
+
+**Input:**
+
+1. Klicka på Edit knappen i posten
+2. Ändra innehållet i textrutan.
+3. Klicka på Edit Post
+
+**Output:**
+
+1. Systemet presenterar “Your post has been updated”.
+2. Post är ändrad
+
+### Testfall 5.3 Misslyckad edit av andras post
+
+**Input:**
+
+1. Lägg upp 2 poster från två olika användare
+2. Logga in med den senaste
+3. Klicka på din senaste post
+2. Högerklicka på edit knappen i fönstret post
+3. Välj "Inspect element"
+4. Hitta den gömda edit knappen
+5. Ändra dess value med en siffra mindre tex 90 till 89.
+6. Tryck på Edit Post knappen
+
+**Output:**
+
+1. Fönstret försvinner
+2. Ingen post är ändrad.
+
+### Testfall 5.4 Avbruten edit
+
+**Input:**
+
+1. Trycker på edit i posten.
+2. Ändra innehållet i textrutan.
+3. Klicka på X knappen.
+
+**Output:**
+
+1. Fönstret försvinner
+2. Ingen post är ändrad.
+
+
 Admin tar bort någon annans post.
 Resultat Post tas bort. Systemet presenterar “Your post has been deleted”.
 Admin uppdaterar någon annans post.
