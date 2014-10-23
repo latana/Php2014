@@ -19,8 +19,8 @@ bara meddela om nya bilder som de laddat upp.
 ##Krav
 1.	Funktionell registrering och login.
 2.	Medlemen ska kunna ändra lösenordet.
-3.	En medlem ska kunna lägga till eller ta bort bilder i sitt galleri.
-4.	Posta meddelanden med full CRUD till medlemmar.
+3.	Posta meddelanden med full CRUD till medlemmar.
+4.	En medlem ska kunna lägga till eller ta bort bilder i sitt galleri.
 5.	En medlemmens profilbild ska kunna ändras.
 6.	Medlemmen ska kunna titta på andras galleri.
 7.	Medlemmen ska kunna kommentera bilder.
