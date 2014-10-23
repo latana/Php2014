@@ -26,10 +26,10 @@ bara meddela om nya bilder som de laddat upp.
 3.	Medlemmen lägger upp en post på systemets centrala platts.
 3.	Medlemmen tar bort sin gamla post.
 4.	Medlemmen ändrar något i sin gamla post.
-5.	Medlemmen laddar upp en bild på sitt galleri.
+5.	Medlemmen ändrar sitt lösenord.
 6.	Medlemmen ändrar en bild på sitt galleri
 7.	Medlemmen tar bort bild från sitt eget galleri.
-8.	Medlemmen ändrar sitt lösenord.
+8.	Medlemmen laddar upp en bild på sitt galleri.
 9.	Medlemmen lägger upp en kommentar på en bild
 10.	Medlemmen ändrar en kommentar på en bild
 11.	Medlemmen tar bort en kommentar från en bild.
