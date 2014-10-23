@@ -7,27 +7,17 @@ bara meddela om nya bilder som de laddat upp.
 
 ##Krav
 1.	Funktionell registrering och login.
-2.	Medlemen ska kunna andra lösenordet.
-3.	En medlem ska kunna lägga till eller ta bort bilder i sitt galleri.
-4.	Posta meddelanden med full CRUD till medlemmar.
-5.	En medlemmens profilbild ska kunna ändras.
-6.	Medlemmen ska kunna titta på andras galleri.
-7.	Admin ska kunna ändra och ta bort alla poster och galleribilder.
-8.	Admin ska kunna ta bort användare. 
-9.	Medlemmen ska kunna kommentera bilder med full CRUD.
-
-##Krav
-1.	Funktionell registrering och login.
 2.	Medlemen ska kunna ändra lösenordet.
 3.	Posta meddelanden med full CRUD till medlemmar.
-4.	En medlem ska kunna lägga till eller ta bort bilder i sitt galleri.
-5.	En medlemmens profilbild ska kunna ändras.
-6.	Medlemmen ska kunna titta på andras galleri.
-7.	Medlemmen ska kunna kommentera bilder.
-7.	Medlemmen ska ha full crud på sina egna kommentarer.
-7.	Admin ska kunna ändra och ta bort alla poster och galleribilder.
-8.	Admin ska kunna ta bort användare. 
-9.	Kommentera bilder med full CRUD.
+4.	Admin ska ha full CRUD på allas poster
+5.	En medlem ska kunna lägga till eller ta bort bilder i sitt galleri.
+6.	En medlemmens profilbild ska kunna ändras.
+7.	Medlemmen ska kunna titta på andras galleri.
+8.	Medlemmen ska kunna kommentera bilder.
+9.	Medlemmen ska ha full crud på sina egna kommentarer.
+10.	Admin ska kunna ta bort användare. 
+11.	Kommentera bilder med full CRUD.
+12.	Admin ska kunna ändra och ta bort alla poster och galleribilder.
 
 ##Användningsfall
 ###Medlem
