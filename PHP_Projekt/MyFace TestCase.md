@@ -14,7 +14,7 @@
 1. Username "Svensson"
 2. Klicka på Register
 
-**Output**
+**Output:**
 
 1. Systemet presenterar "Username must have 3 letters and password 6 letters".
 
@@ -25,149 +25,297 @@
 2. Password "Hemligt"
 3. Klicka på Register
 
-**OutPut**
+**OutPut:**
 
 1. Systemet pressenterar "Password doesn't match".
 
 ###Testfall 1.4  Misslyckad registrering för korta uppgifter
-**Input**
+**Input:**
 
 1. Username "Ida"
 2. Password "Hemli"
 3. Repeat password "Hemli"
 3. Klicka på Register
 
-**Output**
+**Output:**
 
 1. Systemet presenterar "Username must have 3 letters and password 6 letters".
 
 ### Testfall 1.5 Misslyckad registrering med taggar i Username.
-**Input**
+**Input:**
 
 1. Username "<tagg>Svensson</tagg>"
 2. Password "Hemligt"
 3. Repeat Ppssword "Hemligt"
 4. Klicka på Register
 
-**Output**
+**Output:**
 
 1. Systemet presenterar "No valid letters in username".
 2. Username innehåller "Svensson"
 
 ### Testfall 1.6 Misslyckad registrering med taggar i password.
 
-**Input**
+**Input:**
 
 1. Username "Svensson"
 2. Password "<tagg>Hemligt</tagg>"
 3. Repeat Password "Hemligt"
 4. Klicka på Register
 
-**Output**
+**Output:**
 
 1. Systemet presenterar "Password doesn't match"
 
 
 ### Testfall 1.7 Misslyckad registrering med olika lösenord.
 
-**Input**
+**Input:**
 
 1. Username "Svensson"
 2. Password "Hemligt"
 3. Repeat password "Hemlighet"
 4. Klicka på Register.
 
-**Output**
+**Output:**
 1. Systemet presenterar "Password doesn't match".
 
 
 ### Testfall 1.8 Misslyckad Registrering sig med upptaget användarnamn
 
-**Input**
+**Input:**
 1. Username "Admin"
 2. Password "Password"
 3. Repeat password "Password"
 4. Klickar på Register.
 
-**Output**
+**Output:**
 
 1. Systemet presenterar "The username is in use. Please try somthing else".
 
 ### Testfall 1.9 Misslyckad Registrering med username som finns med stora bokstäver.
 
-**Input**
+**Input:**
 
 1. Username "ADMIN"
 2. Password "Password"
 3. Repeat password "Password"
 4. Klickar på Register.
 
-**Output**
+**Output:**
 
 1. Systemet presenterar "The username is in user. Please try somthing else".
 
 ### Testfall 1.10 Lyckad registrering.
 
-**Input**
+**Input:**
 
 1. Username "Svensson"
 2. Password "Hemligt"
 3. Repeat password "Hemligt"
 4. Klickar på Register.
 
-**Output**
+**Output:**
 
 1. Systemet navigerar användaren till loginsidan.
 2. Systemet presenterar loginsidan och meddelandet "Success. Your welcome to login now".
 
 ### Testfall 1.11 Lyckad registrering och trycker därefter på F5
 
-**Input**
+**Input:**
 
 1. Username "Andersson"
 2. Password "Hemligt"
 3. Repeat password "Hemligt"
 4. Klickar på F5
 
-**OutPut**
+**OutPut:**
 
 1. Användaren är kvar på loginsidan.
 2. Meddelandet visas inte längre.
 
-### Testfall 2.1
-Inloggning
-Loggar in med tomma fält.
-Result Systemet presenterar "Username is missing".
-Loggar in med endast giltigt Username.
-Resultat Systemet presenterar "Password is missing".
-Loggar in med endast giltigt Password.
-Resultat Systemet presenterar "Username is missing".
-Loggar in med ogiltigt Username och Password.
-Resultat Systemet presenterar "Username or Password is wrong".
-Loggar in med giltigt Username och ogiltigt Password.
-Reslutat Systemet presenterar "Username or password is wrong".
-Loggar in med taggar i Username och giltigt Password.
-Resultat Systemet presenterar "Please avoid using taggs".
-Loggar in med taggar i Password.
-Resultat Systemet presenterar "Username or password is wrong".
-Loggar in med giltiga värden.
-Resultat Man är inloggad och användaren tas till huvudsidan.
-Loggar in med giltiga värden och bockar i “Remember me”.
-Resultat Man är inloggad och kakor är skapade.
-Cookie och sessions
-Inloggad utan att markera “Remember me”. Tar bort session och gör en ny post.
-Resultat Man är uloggad.
-Inloggad. Kopierar session till en annan webbläsare som inte är inloggad.
-Inloggad utan att markera “Remember me”. Tar bort session och trycker F5.
-Resultat Man är inloggad och en ny session är skapad.
-Inloggad. Kopierar session till en annan webbläsare som inte är inloggad.
-Resultat Fortfarande inte inloggad och systemet presenterar "The session was corrupted and has been deleted".
-Inloggad, Remember Me. Tar bort session och gör en ny post.
-Resultat Man är fortfarande inloggad och en ny session är startad.
-Inloggad, Remember Me. Tar bort sessionen och  ändrar värdet i cookie.
-Resultat Man är utloggad, kakorna är borta och systemet presenterar "The cookie was corrupted and has been deleted".
-Inloggad, Remember Me. Klickar på logout knappen.
-Resultat Man är utloggad och både session och kakorna är borta.
+### Testfall 2.1 Misslyckad inloggning med tomma fält.
+
+**Input:**
+
+1. Klicka på Log in.
+
+**Output:**
+
+1. Systemet presenterar "Username is missing".
+2. Ej inloggad
+
+### Testfall 2.2 Misslyckad inloggning med endast giltigt Username.
+
+**Input:**
+
+1. Username "Svensson"
+2. Klicka på Log in.
+
+**Output:**
+
+1. Systemet presenterar "Password is missing".
+2. Ej inloggad
+
+### Testfall 2.3 Misslyckad inloggning med endast giltigt Password.
+
+**input:**
+
+1. Password "Hemligt"
+2. Klicka på Log in
+
+**Output:**
+1. Systemet presenterar "Username is missing".
+2. Ej inloggad
+
+### Testfall 2.4 Misslyckad inloggning med ogiltigt Username och Password
+
+**Input:**
+
+1. Username "Svenson"
+2. Password "Hemlligt"
+3. Klickar på Log in
+
+**OutPut:**
+
+1. Systemet presenterar "Username or Password is wrong".
+2. Ej inloggad
+
+
+### Testfall 2.5 Misslyckad inloggning med giltigt Username och ogiltigt Password
+
+**Input:**
+
+1. Username "Svensson"
+2. Password "Hemlligt"
+3. Klickar på Log in
+
+**Output:**
+
+1. Systemet presenterar "Username or password is wrong".
+2. Ej inloggad
+
+### Testfall 2.6 Misslyckad inloggning med taggar i Username och giltigt Password
+
+**Input:**
+
+1. Username "<tagg>Svensson</tagg>"
+2. Password "Hemligt"
+3. Klicka på Log in
+
+**Output:**
+1. Systemet presenterar "Please avoid using taggs".
+2. Ej inloggad
+
+### Testfall 2.7 Misslyckad inloggning med taggar i Password
+ 
+ **Input:**
+
+1. Username "Svensson"
+2. Password "<tagg>Hemligt</tagg>"
+3. Klicka på Log in
+
+**Output:**
+
+1. Systemet presenterar "Username or password is wrong".
+2. Ej inloggad
+
+### Testfall 2.8 Inloggning med giltiga värden
+
+**Input:**
+
+1. Username "Svensson"
+2. Password "Hemligt"
+3. Klicka på Log in
+
+**Output:**
+
+1. Användaren tas till huvudsidan.
+2. Inloggad
+
+### Testfall 2.9 Inloggning och bockar i “Remember me”.
+
+**Input:**
+
+1. Username "Svensson"
+2. Password "Hemligt"
+3. Klicka på Log in
+
+**Output:**
+
+1. Kakor är skapade.
+2. Inloggad 
+
+### Testfall 2.10 Posta om utan session
+
+**Input**
+
+1. Logga in.
+2. Ta bort sessionen PHPSESSID
+3. Ladda om sidan
+
+**Output:**
+
+1. uloggad
+
+### Testfall 2.11 Sessions stöld
+
+**Input:**
+
+1. Logga in på en webläsare
+2. Kopiera sessionen
+3. Navigera till sidan i en annan webbläsare
+4. Klistra in sessionens värde i den nya webbläsaren
+5. Ladda om sidan.
+
+**Output:**
+
+1. Systemet presenterar "The session was corrupted and has been deleted".
+2. Ej inloggad 
+
+### Testfall 2.12 Inloggad med kakor
+
+**Input:**
+
+1. Logga in (Bocka i Remember me)
+2. Ta bort sessionen
+3. Ladda om sidan
+
+**Output:**
+
+1. ny session är startad
+2. Inloggad
+
+### Testfall 2.13 Manipulerade kakor
+
+**Input:**
+
+1. Logga in (Bocka i Remember me)
+2. Ta bort session.
+3. Ändra värdet i kakorna
+4. Ladda om sidan
+
+**Output:**
+
+1. Systemet presenterar "The cookie was corrupted and has been deleted".
+2. Kakorna är borta
+3. Utloggad 
+
+### Testfall 2.14 Logga ut
+
+**Input:**
+
+1. Logga in (Bocka i Remember me)
+2. Klicka på Log out
+
+**Output:**
+
+1. Sessionen är borta 
+2. Kakorna är borta
+3. Ej inloggad
+
+###
+
 Inlägg - FrontPage
 Postar en post.
 Resultat posten blir postad.
