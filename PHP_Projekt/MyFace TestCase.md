@@ -78,12 +78,14 @@
 4. Klicka på Register.
 
 **Output:**
+
 1. Systemet presenterar "Password doesn't match".
 
 
 ### Testfall 1.8 Misslyckad Registrering sig med upptaget användarnamn
 
 **Input:**
+
 1. Username "Admin"
 2. Password "Password"
 3. Repeat password "Password"
