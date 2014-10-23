@@ -29,8 +29,8 @@ bara meddela om nya bilder som de laddat upp.
 6.	Medlemmen ändrar sitt lösenord.
 7.	Medlemmen ändrar sin profil bild
 8.	Medlemmen laddar upp en bild på sitt galleri.
-9.	Medlemmen tar bort bild från sitt eget galleri.
-10.	Medlemmen ändrar en bild på sitt galleri
+9.	Medlemmen ändrar en bild på sitt galleri
+10.	Medlemmen tar bort bild från sitt eget galleri.
 11.	Medlemmen lägger upp en kommentar på en bild
 12.	Medlemmen ändrar en kommentar på en bild
 13.	Medlemmen tar bort en kommentar från en bild.
