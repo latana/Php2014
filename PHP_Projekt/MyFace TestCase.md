@@ -473,17 +473,50 @@
 1. Fönstret försvinner
 2. Ingen post är ändrad.
 
+### Testfall 5.5 Misslyckad Post av en bild
 
-Admin tar bort någon annans post.
-Resultat Post tas bort. Systemet presenterar “Your post has been deleted”.
-Admin uppdaterar någon annans post.
-Resultat Kommentaren uppdateras.
-Laddar upp en fil som inte är jpg, png eller jpeg och en post.
-Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.” Ingen post blev skapad
-Laddar upp en och ändrar bild namn från test.png till test.jpg och en post.
-Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.” Ingen post blev skapad.
-Laddar upp en och ändrar bild namn från test.jpg till test.png och en post.
-Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.” Ingen post blev skapad.
+**Input:**
+
+1. Textbox "Jag är en post"
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Välj en fil som inte är jpg, png eller jpeg.
+4. Klicka på Post
+
+**Output:**
+
+1. Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.”
+2. Ingen post blev skapad
+
+### Testfall 5.6 fakad jpg
+
+**Input:**
+
+1. Ändrar bild namn från test.png till test.jpg
+3. Textbox "Jag är en post"
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Laddar upp bilden som du ändrade
+4. Klicka på post
+
+**Output:**
+
+1. Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.”
+2. Ingen post blev skapad
+
+### Testfall 5.7 fakad png 
+
+**Input:**
+
+1. Ändrar bild namn från test.jpg till test.png
+3. Textbox "Jag är en post"
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Laddar upp bilden som du ändrade
+4. Klicka på post
+
+**Output:**
+
+1. Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.”
+2. Ingen post blev skapad
+
 
 Ändra, ta bort inlägg- userpage
 
@@ -733,6 +766,10 @@ Resultat  errorsidan visas med meddelandet “The page cannot be found or an une
  Navigera till “latana.se/PHP/myFace/index.php?wrongsite” ingen session eller cookies.
 Resultat  frontPage visas.
 
+!!!ADMIN!!!
 
-
+Admin tar bort någon annans post.
+Resultat Post tas bort. Systemet presenterar “Your post has been deleted”.
+Admin uppdaterar någon annans post.
+Resultat Kommentaren uppdateras.
 
