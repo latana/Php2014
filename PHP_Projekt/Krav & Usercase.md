@@ -14,7 +14,7 @@ bara meddela om nya bilder som de laddat upp.
 6.	Medlemmen ska kunna titta på andras galleri.
 7.	Admin ska kunna ändra och ta bort alla poster och galleribilder.
 8.	Admin ska kunna ta bort användare. 
-9.	Kommentera bilder med full CRUD.
+9.	Medlemmen ska kunna kommentera bilder med full CRUD.
 
 ##Krav
 1.	Funktionell registrering och login.
