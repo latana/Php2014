@@ -162,6 +162,7 @@
 **input:**
 
 1. Password "Hemligt"
+
 2. Klicka på Log in
 
 **Output:**
