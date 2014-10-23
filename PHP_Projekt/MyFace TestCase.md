@@ -517,30 +517,30 @@
 1. Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.”
 2. Ingen post blev skapad
 
-### Testfall 5.6 fakad jpg
+### Testfall 5.6 fake jpg
 
 **Input:**
 
 1. Ändrar bild namn från test.png till test.jpg
-3. Textbox "Jag är en post"
-2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
-3. Laddar upp bilden som du ändrade
-4. Klicka på post
+2. Textbox "Jag är en post"
+3. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+4. Laddar upp bilden som du ändrade
+5. Klicka på post
 
 **Output:**
 
 1. Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.”
 2. Ingen post blev skapad
 
-### Testfall 5.7 fakad png 
+### Testfall 5.7 fake png 
 
 **Input:**
 
 1. Ändrar bild namn från test.jpg till test.png
-3. Textbox "Jag är en post"
-2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
-3. Laddar upp bilden som du ändrade
-4. Klicka på post
+2. Textbox "Jag är en post"
+3. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+4. Laddar upp bilden som du ändrade
+5. Klicka på post
 
 **Output:**
 
@@ -675,31 +675,86 @@
 
 Resultat Systemet presenterar "The new password have been saved".
 
+### Testfall 7.1 Lyckad ändring av profilbild
 
-Ändra Profilbild
-Laddar upp en giltig bild och trycker Upload New.
-Resultat Systemet presenterar "Your Profile picture has been changed". Profilbilden är ändrad
+**Input**
+
+1. Navigera till userpage
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Välj en fil ut av jpg eller png
+4. Klicka på Upload New
+
+**Output:**
+
+1. Systemet presenterar "Your Profile picture has been changed".
+2. Profilbilden är ändrad.
+
+### Testfall 7.2 Misslyckad ändring av profilbild. Tomt fält
+
+**Input:**
+
+1. Klicka på Upload New
+
+**Output:**
+
+1. Systemet presenterar "Picture is missing".
+2. Profilbilden är oförändrad.
+
+### Testfall 7.3 Misslyckad ändring av profilbild. Ingen bild.
+
+**Input:**
+
+1. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+2. Välj en bild som inte är jpg, png eller jpeg.
+3. Klickar på Upload New
+
+**Output:**
+
+1. Systemet presenterar "Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type".
+2. Profilbilden är oförändrad.
+
+### Testfall 7.4 Misslyckad ändring av profilbild. Fake jpg.
+
+**Input:**
+
+1. Ändrar bild namn från test.png till test.jpg
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Laddar upp bilden som du ändrade
+4. Klicka på Upload New
+
+**Output:**
+
+1. Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.”
+2. Profilbilden är oförändrad.
+
+### Testfall 7.5 Misslyckad ändring av profilbild. Fake png.
+
+**Input:**
+
+1. Ändrar bild namn från test.jpg till test.png
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Laddar upp bilden som du ändrade
+4. Klicka på Upload New
+
+**Output:**
+
+1. Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.”
+2. Profilbilden är oförändrad.
+
+### Testfall 7.6 Misslyckad ändring av profilbild. Större än 3 mb
+
+**Input:**
+
+1. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+2. Laddar upp bild
+3. Klicka på Upload New
+
+**Output:**
+
+1. Systemet presenterar "The picture is to big. No more than 3 mb".
+2. Profilbilden är oförändrad.
 
 
-Trycker på Upload New utan att ha laddat upp något.
-Resultat Systemet presenterar "Picture is missing".
-
-Klickar på Upload New med uppladdad fil som inte är jpg, png eller jpeg.
-
-Resultat Systemet presenterar "Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type".
-
-Klickar på Upload New med uppladdad fil som inte är jpg, png eller jpeg.
-
-Resultat Systemet presenterar "Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type".
-
-Klickar på Upload New med ändrad bildnamn från test.png till test.jpg.
-Resultat Systemet presenterar "Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type".
-
-Klickar på Upload New med ändrad bildnamn från test.jpg till test.png.
-Resultat Systemet presenterar "Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type".
-
-Klickar på Upload New med en bild större än 3 mb.
-Resultat Systemet presenterar "The picture is to big. No more than 3 mb".
 
 Ladda upp bilder - usergallery
 
