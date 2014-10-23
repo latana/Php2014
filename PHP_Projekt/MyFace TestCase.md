@@ -314,21 +314,82 @@
 2. Kakorna är borta
 3. Ej inloggad
 
-###
+### Testfall 3.1 Postar en post
 
-Inlägg - FrontPage
-Postar en post.
-Resultat posten blir postad.
-Posta en tom post.
-Resultat Systemet presenterar "Please write somthing".
-Posta en tom post med bild.
-Resultat Systemet presenterar "Please write somthing".
-Postar med taggar
-Resultat Systemet presenterar “Please avoid using taggs”.
-Postar med whitespace
-Resultat Systemet presenterar "Please write somthing".
-Postar post med bild.
-Resultat Kommentaren blir postad med bilden.
+**Input:**
+
+1. Navigera till Home
+2. Textbox "Jag är en post"
+3. Klicka på Post
+
+**Output:**
+
+1. Posten blir postad.
+
+### Testfall 3.2 Posta en tom post
+
+**Input:**
+
+1. Klicka på Post
+
+**Output:**
+
+1. Systemet presenterar "Please write somthing".
+2. Ingen post blev skapad.
+
+### Testfall 3.3 Posta en tom post med bild.
+
+**Input:**
+
+1. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+2. Välj en bild av typen jpg
+2. Klicka på Post
+
+**Output:**
+
+1. Systemet presenterar "Please write somthing"
+2. Ingen post blev skapad.
+
+### Testfall 3.4 Postar med taggar
+
+**Input:**
+
+1. Textbox "<tagg> testing </tagg>"
+2. Klickar på Post
+
+**Output:**
+
+1. Systemet presenterar “Please avoid using taggs”.
+2. Ingen post blev skapad
+
+
+### Testfall 3.5 Postar med whitespace
+
+**Input:**
+
+1. Textbox "       "
+2. Klickar på Post
+
+**Output:**
+
+1. Systemet presenterar "Please write somthing".
+2. Ingen post blev skapad
+
+### Testfall 3.6 Postar post med bild.
+
+**Input:**
+
+1. Textbox "Jag är en post"
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Välj en bild av typen jpg.
+4. Klicka på Post
+
+**Output:**
+
+1. Kommentaren blir postad med bilden.
+
+
+
 Klickar på delete.
 Resultat Både bild och kommentar tas bort Systemet presenterar “Your post has been deleted”.
 Klickar på delete. Ändrar den gömda knappens value till ett annat existerande och klickar på Delete
