@@ -903,24 +903,125 @@ Resultat Systemet presenterar "The new password have been saved".
 1. Systemet presenterar “Invalid file! please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type”.
 2. Ingen bild blev postad.
 
-### Testfall 8.12 
+### Testfall 8.12 Misslyckad uppladdning av bild. Fake jpg
 
-Klickar på Upload Picture med ändrad bildnamn från test.png till test.jpg och en title.
-Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg    	    or jpeg and that the img format is the same as the img type.” 
-     Ingen bild blev skapad.
-Trycker på Edit knappen under en bild i galleriet.
-Resultat Systemet presenterar en popup ruta med den nuvarande titeln och beskrivningen i vars sin textruta.
-Trycker på Edit knappen utan att ändra fälten.
-Resultat popup rutan försvinner och bildens titel och beskrivning är oförändrade.
-Trycker på Edit knappen med blanka fält.
-Resultat Systemet presenterar “A title is missing”.
-Trycker på Edit knappen med blankt titel fält och ifylld beskrivning.
-Resultat Systemet presenterar “A title is missing”
-Trycker på Edit knappen med blankt beskrivning och giltig titel.
-Resultat Popup rutan försvinner och bilden ny tidel och blank beskrivning.
+**Input:**
 
-Trycker på edit knappen med whitespace i title.
-Resultat Systemet presenterar “A title is missing”.
+1. Ändrar bild namn från test.png till test.jpg
+2. Title "Jag är en titel"
+3. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+4. Laddar upp bilden som du ändrade
+5. Klicka på Upload Picture
+
+**Output:**
+
+1. Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.”
+2. Ingen Bild blev postad
+
+### Testfall 8.13 fake png 
+
+**Input:**
+
+1. Ändrar bild namn från test.jpg till test.png
+2. Titel "Jag är en titel"
+3. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+4. Laddar upp bilden som du ändrade
+5. Klicka på Upload Picture
+
+**Output:**
+
+1. Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.”
+2. Ingen bild blev postad
+
+### Testfall 9.1 Edit gallery popup
+
+**Input:**
+
+1. Ladda upp en bild i galleriet
+2. Klicka på Edit under bilden
+
+**Output:**
+
+1. En popup ruta visas med titel och beskrivning i textrutan.
+
+### Testfall 9.2 Edit gallery. Ingen ändring
+
+**Input:**
+
+1. Klicka på edit under bilden.
+2. Popup rutan visas.
+3. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner.
+2. Ingen bild blev ändrad.
+
+### Testfall 9.3 Edit gallery.Blanka fält.
+
+**Input:**
+
+1. Klicka på edit under bilden.
+2. Popuprutan visas.
+3. Töm New Title
+4. Töm Description
+5. Klicka på Edit Gallery
+
+**Output:**
+
+1. Pipup rutan försvinner
+2. Systemet presenterar “A title is missing”.
+3. Bilden är oförändrad
+
+### Testfall 9.4 Edit gallery. blankt titel fält och ifylld beskrivning
+
+**Input:**
+
+1. Klicka på edit under bilden.
+2. Popuprutan visas.
+3. Töm title
+4. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner
+2. Systemet presenterar “A title is missing”
+3. Bilden är orändrad
+
+### Testfall 9.5 Edit gallery. Giltig title utan description
+
+**Input:**
+
+1. Klicka på edit under bilden.
+2. Popuprutan visas.
+3. Töm Description
+4. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner
+2. Systemet presenterar "Your picture's title and description has been updated"
+2. Bilden har blank beskrivning.
+
+### Testfall 9.6 Edit gallery. Whitespace i title
+
+**Input:**
+
+1. Klicka på edit under bilden.
+2. Popuprutan visas.
+3. Title "     "
+4. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner
+2. Systemet presenterar “A title is missing”.
+2. Bilden är oförändrad.
+
+### Testfall 9.7 Edit gallery. Taggar i title
+
+
+
 Trycker på edit knappen med taggar i title.
 Resultat Systemet presenterar “please avoid using taggs in the title input”.
 Trycker på edit knappen med taggar i description.
