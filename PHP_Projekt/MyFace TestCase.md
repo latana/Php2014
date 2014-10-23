@@ -1001,7 +1001,7 @@ Resultat Systemet presenterar "The new password have been saved".
 
 1. Popuprutan försvinner
 2. Systemet presenterar "Your picture's title and description has been updated"
-2. Bilden har blank beskrivning.
+3. Bilden har blank beskrivning.
 
 ### Testfall 9.6 Edit gallery. Whitespace i title
 
@@ -1016,18 +1016,67 @@ Resultat Systemet presenterar "The new password have been saved".
 
 1. Popuprutan försvinner
 2. Systemet presenterar “A title is missing”.
-2. Bilden är oförändrad.
+3. Bilden är oförändrad.
 
 ### Testfall 9.7 Edit gallery. Taggar i title
 
+**Input:**
 
+1. Klicka på edit under bilden.
+2. Popuprutan visas.
+3. Title "<tagg>jag är en titel</tagg>"
+4. Klicka på Edit Gallery
 
-Trycker på edit knappen med taggar i title.
-Resultat Systemet presenterar “please avoid using taggs in the title input”.
-Trycker på edit knappen med taggar i description.
-Resultat Systemet presenterar “Please avoid using taggs in the comment input”.
-Trycker på edit kanppen med whitespace i description.(Description var redan tomt)
-Resultat Popuprutan försvinner och bildens beskrivning är blank.
+**Output:**
+
+1. Popuprutan försvinner
+2. Systemet presenterar “please avoid using taggs in the title input”.
+3. Bilden är oförändrad.
+
+### Testfall 9.8 Edit gallery. Taggar i description
+
+**Input:**
+
+1. Klicka på edit under bilden.
+2. Popuprutan visas.
+3. Description "<tagg>jag är en beskrivning</tagg>"
+4. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner
+2. Systemet presenterar “please avoid using taggs in the description input”.
+3. Bilden är oförändrad.
+
+### Testfall 9.9 Edit gallery. whitespace i description (Description var redan tomt)
+
+**Input:**
+
+1. Klicka på edit under bilden.
+2. Popuprutan visas. (Description var redan tomt)
+3. Description "   "
+4. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner
+2. Bilden är oförändrad.
+
+### Testfall 9.10 Edit gallery. whitespace i description (Description var redan ifyllt)
+
+**Input:**
+
+1. Klicka på edit under bilden.
+2. Popuprutan visas. (Description var redan ifyllt)
+3. Description "   "
+4. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner
+2. Systemet presenterar “Your picture’s title and description has been updated”.
+3. Bildens beskrivning är blank. 
+
 Trycker på edit kanppen med whitespace i description.(Description var redan ifyllt)
 Resultat Systemet presenterar “Your picture’s title and description has been updated”. Bildens beskrivning är blank.
 Ändrar den gömnda knappens value till ett existerande och trycker på Edit Gallery.
