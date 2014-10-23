@@ -417,6 +417,36 @@
 
 1. Ingen post är borttagen
 
+### Testfall 4.3 Delete post i userpage
+
+**Input:**
+
+1. Klicka på användarnamnet på den vänstra sidan
+2. Navigera till userpage
+3. Klicka på delete knappen i posten
+
+**Output:**
+
+1. Systemet presenterar “Your post has been deleted”.
+2. Posten togs bort 
+
+### Testfall 4.4 Misslyckad delete av andras post i userpage
+
+**Input**
+
+1. Lägg upp 2 poster från två olika användare
+2. Logga in med den senaste
+3. Navigera till userpage
+2. Högerklicka på delete knappen på din senaste post
+3. Välj "Inspect element"
+4. Hitta den gömda delete knappen
+5. Ändra dess value till en siffra en annan post har
+6. Tryck på delete knappen.
+
+**Output:**
+
+1. Ingen post är borttagen
+
 ### Testfall 5.1 Klickar på edit
 
 **Input:**
@@ -518,45 +548,64 @@
 2. Ingen post blev skapad
 
 
-### Testfall 4.3 Delete post i userpage
+### Testfall 5.8 Popup fönster i userPage
 
 **Input:**
 
-1. Klicka på användarnamnet på den vänstra sidan
-2. Navigera till userpage
-3. Klicka på delete knappen i posten
+1. Klicka på edit knappen inne i en post
 
 **Output:**
 
-1. Systemet presenterar “Your post has been deleted”.
-2. Posten togs bort 
+1. Ett popup fönster visas
+2. Textbox med text på den post som skulle ändras.
 
-### Testfall 4.4 Misslyckad delete av andras post i userpage
+### Testfall 5.9 Lyckad ändring av post i userpage
 
-**Input**
+**Input:**
+
+1. Klickar på edit knappen i en post
+2. Popup rutan visas
+3. Ändrar innehållet i textrutan
+4. Klickar på Edit Post
+
+**Output:**
+
+1. Systemet presenterar “Your post has been updated”
+2. Post är ändrad
+
+### Testfall 5.10 Misslyckad edit av andras post i userPage
+
+**Input:**
 
 1. Lägg upp 2 poster från två olika användare
 2. Logga in med den senaste
 3. Navigera till userpage
-2. Högerklicka på delete knappen på din senaste post
+3. Klicka på din senaste posts edit knapp
+2. Högerklicka på edit knappen i fönstret post
 3. Välj "Inspect element"
-4. Hitta den gömda delete knappen
-5. Ändra dess value till en siffra en annan post har
-6. Tryck på delete knappen.
+4. Hitta den gömda edit knappen
+5. Ändra dess value med en siffra mindre tex 90 till 89.
+6. Tryck på Edit Post knappen
 
 **Output:**
 
-1. Ingen post är borttagen
+1. Fönstret försvinner
+2. Ingen post är ändrad.
 
+### Testfall 5.11 Avbruten edit i userPage
 
-Klickar på edit.
-Resultat Ett popup fönster uppenbarar sig med en textbox med text på den post som skulle ändras.
-Klickar på edit, ändrar kommentaren i fönstret och klickar på Edit Post.
-Resultat Systemet presenterar “Your post has been updated”.
-Trycker på edit, ändrar den gömda knappens value till ett annat existerande, ändrar posten och klickar på Edit Post.
-Resultat Fönstret försvinner och ingen post är ändrad.
-Trycker på edit,ändrar innehållet i fältet och klickar på X knappen.
-Resultat Fönstret försvinner och posten är inte ändrad.
+**Input:**
+
+1. Navigera till userpage
+2. Trycker på edit i posten.
+3. Ändra innehållet i textrutan.
+4. Klicka på X knappen.
+
+**Output:**
+
+1. Fönstret försvinner
+2. Ingen post är ändrad.
+
 
 Ändra lösenord - Userpage
 
