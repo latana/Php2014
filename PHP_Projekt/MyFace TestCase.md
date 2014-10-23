@@ -518,12 +518,37 @@
 2. Ingen post blev skapad
 
 
-Ändra, ta bort inlägg- userpage
+### Testfall 4.3 Delete post i userpage
 
-Klickar på delete.
-Resultat post tas bort Systemet presenterar “Your post has been deleted”.
-Ändrar den gömda knappens value till ett annat existerande och klickar på Delete
-Resultat Fönstret försvinner och ingen post är borttagen.
+**Input:**
+
+1. Klicka på användarnamnet på den vänstra sidan
+2. Navigera till userpage
+3. Klicka på delete knappen i posten
+
+**Output:**
+
+1. Systemet presenterar “Your post has been deleted”.
+2. Posten togs bort 
+
+### Testfall 4.4 Misslyckad delete av andras post i userpage
+
+**Input**
+
+1. Lägg upp 2 poster från två olika användare
+2. Logga in med den senaste
+3. Navigera till userpage
+2. Högerklicka på delete knappen på din senaste post
+3. Välj "Inspect element"
+4. Hitta den gömda delete knappen
+5. Ändra dess value till en siffra en annan post har
+6. Tryck på delete knappen.
+
+**Output:**
+
+1. Ingen post är borttagen
+
+
 Klickar på edit.
 Resultat Ett popup fönster uppenbarar sig med en textbox med text på den post som skulle ändras.
 Klickar på edit, ändrar kommentaren i fönstret och klickar på Edit Post.
