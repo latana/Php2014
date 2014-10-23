@@ -758,56 +758,152 @@ Resultat Systemet presenterar "The new password have been saved".
 1. Systemet presenterar "The picture is to big. No more than 3 mb".
 2. Profilbilden är oförändrad.
 
+### Testfall 8.1 Navigera till usergallery
 
+**Input:**
 
-Ladda upp bilder - usergallery
+1. Klicka på Gallery
 
-Klickar på Gallery länken.
+**Output:**
 
-Resultat Systemet presenterar användarens galleri.
+1. Systemet presenterar användarens galleri
 
-Klickar på Upload Picture med tomma fält.
+### Testfall 8.2 Misslyckad uppladding. Tomma fält.
 
-Resultat Systemet presenterar “Picture is missing”.
+**Input:**
 
-Klickar på Upload Picture med endast Title ifylt.
+1. Klicka på Upload Picture
 
-Resultat Systemet presenterar “Picture is missing”.
+**Output:**
 
-Klickar på Upload Picture med endast uppladdad bild.
+1. Systemet presenterar “Picture is missing”.
+2. Ingen bild blev postad
 
-Resultat Systemet presenterar “A title is missing”.
+### Testfall 8.3 Misslyckad uppladding. Titel ifylt
 
-Klickar på Upload Picture med uppladdad bild och taggar i Title.
+**Input:**
 
-Resultat Systemet presenterar “Please avoid using taggs in the title input”.
+1. Title "En titel"
+2. Klicka på Upload Picture
 
-Klickar på Upload Picture med uppladdad bild och whitespace i title.
+**Output:**
 
-Resultat Systemet presenterar “A title is missing”.
+1. Systemet presenterar “Picture is missing”.
+2. Ingen bild blev postad
 
-Klickar på Upload Picture med uppladdad bild och giltig title.
+### Testfall 8.4 Misslyckad uppladdning. Endast bild
 
-Resultat En ny bild blir uppladdad i gallery.
+**Input:**
 
+1. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+2. Välj en bild av typen jpg, png eller jpeg,
+3. Klickar på Upload Picture
 
-Klickar på Upload Picture med uppladdad bild och giltig titel och giltig description.
+**Output:**
 
-Resultat En ny bild blir uppladdad i gallery.
+1. Systemet presenterar “A title is missing”.
+2. Ingen bild blev postad.
 
-Klickar på Upload Picture med uppladdad bild och giltig titel och whitespace i description.
+### Testfall 8.5 Misslyckad uppladdning. taggar i title.
 
-Resultat En ny bild blir uppladdad i gallery. Description saknas.
+**Input:**
 
-Klickar på Upload Picture med uppladdad bild och giltig titel och taggar i description.
+1.Title "<tagg>en titel </tagg>"
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Välj en bild av typen jpg, png eller jpeg,
+4. Klicka på Upload Picture
 
-Resultat Systemet presenterar “Please avoid using taggs in the comment input”.
+**Output:**
 
-Klickar på Upload Picture med uppladdad fil som inte är jpg, png eller jpeg.
-	giltig title.
+1. Systemet presenterar “Please avoid using taggs in the title input”.
+2. Ingen bild blev postad.
 
-Resultat Systemet presenterar “Invalid file! please make sure the file is of type png,
-     jpg or jpeg and that the img format is the same as the img type”.
+### Testfall 8.6 Misslyckad uppladdning. Whitespace i title.
+
+**Input:**
+
+1. Title "   "
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Välj en bild av typen jpg, png eller jpeg,
+4. Klicka på Upload Picture
+
+**Output:**
+
+1. Systemet presenterar “A title is missing”.
+2. Ingen bild blev postad.
+
+### Testfall 8.7 Lyckad uppladdning av bild utan beskrivning
+
+**Input:**
+
+1. Title "Jag är en titel"
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Välj en bild av typen jpg, png eller jpeg,
+4. Klicka på Upload Picture
+
+**Output:**
+
+1. En ny bild blir uppladdad i gallery.
+
+### Testfall 8.8 Lyckad uppladdning av bild med beskrivning
+
+**Input:**
+
+1. Title "Jag är en titel"
+2. Description "Jag är en beskrivning"
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Välj en bild av typen jpg, png eller jpeg,
+4. Klicka på Upload Picture
+
+**Output:**
+
+1. En ny bild med beskrivning blir uppladdad i gallery.
+
+### Testfall 8.9 Lyckad uppladdning av bild. Whitespace i beskrivning
+
+**Input:**
+
+1. Title "Jag är en titel"
+2. Description "     "
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Välj en bild av typen jpg, png eller jpeg,
+4. Klicka på Upload Picture
+
+**Output:**
+
+1. En ny bild blir uppladdad i gallery.
+2. Beskrivning saknas.
+
+### Testfall 8.10 Misslyckad uppladdning av bild. Taggar i description
+
+**Input:**
+
+1. Title "Jag är en titel"
+2. Description "<tagg>beskrivning</tagg>"
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Välj en bild av typen jpg, png eller jpeg.
+4. Klicka på Upload Picture
+
+**Output:**
+
+1. Systemet presenterar “Please avoid using taggs in the description input”.
+2. Ingen bild blev postad.
+
+### Testfall 8.11 Misslyckad uppladdning av bild. Ladda upp en txt fil
+
+**Input:**
+
+1. Title "Jag är en titel"
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Välj en txt fil
+4. Klicka på Upload Picture
+
+**Output:**
+
+1. Systemet presenterar “Invalid file! please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type”.
+2. Ingen bild blev postad.
+
+### Testfall 8.12 
 
 Klickar på Upload Picture med ändrad bildnamn från test.png till test.jpg och en title.
 Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg    	    or jpeg and that the img format is the same as the img type.” 
