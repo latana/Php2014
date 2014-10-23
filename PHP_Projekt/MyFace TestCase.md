@@ -1,1 +1,457 @@
-testing testing testing
+#TestFall
+
+###Testfall 1.1 Misslyckad registrering med blanka fält.
+**Input:**
+  1. Tomma fält i Username och båda password
+  2. Klicka på Register.
+
+**Output:**
+  1. Systemet presenterar "Username must have 3 letters and password 6 letters".
+
+###Testfall 1.2 Misslyckad registrering med endast giltigt användarnamn.
+**Input:**
+
+1. Username "Svensson"
+2. Klicka på Register
+
+**Output**
+
+1. Systemet presenterar "Username must have 3 letters and password 6 letters".
+
+###Testfall 1.3 Misslyckad registrering Repeat password blankt
+**Input:**
+
+1. Username "Svensson"
+2. Password "Hemligt"
+3. Klicka på Register
+
+**OutPut**
+
+1. Systemet pressenterar "Password doesn't match".
+
+###Testfall 1.4  Misslyckad registrering för korta uppgifter
+**Input**
+
+1. Username "Ida"
+2. Password "Hemli"
+3. Repeat password "Hemli"
+3. Klicka på Register
+
+**Output**
+
+1. Systemet presenterar "Username must have 3 letters and password 6 letters".
+
+### Testfall 1.5 Misslyckad registrering med taggar i Username.
+**Input**
+
+1. Username "<tagg>Svensson</tagg>"
+2. Password "Hemligt"
+3. Repeat Ppssword "Hemligt"
+4. Klicka på Register
+
+**Output**
+
+1. Systemet presenterar "No valid letters in username".
+2. Username innehåller "Svensson"
+
+### Testfall 1.6 Misslyckad registrering med taggar i password.
+
+**Input**
+
+1. Username "Svensson"
+2. Password "<tagg>Hemligt</tagg>"
+3. Repeat Password "Hemligt"
+4. Klicka på Register
+
+**Output**
+
+1. Systemet presenterar "Password doesn't match"
+
+
+### Testfall 1.7 Misslyckad registrering med olika lösenord.
+
+**Input**
+
+1. Username "Svensson"
+2. Password "Hemligt"
+3. Repeat password "Hemlighet"
+4. Klicka på Register.
+
+**Output**
+1. Systemet presenterar "Password doesn't match".
+
+
+### Testfall 1.8 Misslyckad Registrering sig med upptaget användarnamn
+
+**Input**
+1. Username "Admin"
+2. Password "Password"
+3. Repeat password "Password"
+4. Klickar på Register.
+
+**Output**
+
+1. Systemet presenterar "The username is in use. Please try somthing else".
+
+### Testfall 1.9 Misslyckad Registrering med username som finns med stora bokstäver.
+
+**Input**
+
+1. Username "ADMIN"
+2. Password "Password"
+3. Repeat password "Password"
+4. Klickar på Register.
+
+**Output**
+
+1. Systemet presenterar "The username is in user. Please try somthing else".
+
+### Testfall 1.10 Lyckad registrering.
+
+**Input**
+
+1. Username "Svensson"
+2. Password "Hemligt"
+3. Repeat password "Hemligt"
+4. Klickar på Register.
+
+**Output**
+
+1. Systemet navigerar användaren till loginsidan.
+2. Systemet presenterar loginsidan och meddelandet "Success. Your welcome to login now".
+
+### Testfall 1.11 Lyckad registrering och trycker därefter på F5
+
+**Input**
+
+1. Username "Andersson"
+2. Password "Hemligt"
+3. Repeat password "Hemligt"
+4. Klickar på F5
+
+**OutPut**
+
+1. Användaren är kvar på loginsidan.
+2. Meddelandet visas inte längre.
+
+### Testfall 2.1
+Inloggning
+Loggar in med tomma fält.
+Result Systemet presenterar "Username is missing".
+Loggar in med endast giltigt Username.
+Resultat Systemet presenterar "Password is missing".
+Loggar in med endast giltigt Password.
+Resultat Systemet presenterar "Username is missing".
+Loggar in med ogiltigt Username och Password.
+Resultat Systemet presenterar "Username or Password is wrong".
+Loggar in med giltigt Username och ogiltigt Password.
+Reslutat Systemet presenterar "Username or password is wrong".
+Loggar in med taggar i Username och giltigt Password.
+Resultat Systemet presenterar "Please avoid using taggs".
+Loggar in med taggar i Password.
+Resultat Systemet presenterar "Username or password is wrong".
+Loggar in med giltiga värden.
+Resultat Man är inloggad och användaren tas till huvudsidan.
+Loggar in med giltiga värden och bockar i “Remember me”.
+Resultat Man är inloggad och kakor är skapade.
+Cookie och sessions
+Inloggad utan att markera “Remember me”. Tar bort session och gör en ny post.
+Resultat Man är uloggad.
+Inloggad. Kopierar session till en annan webbläsare som inte är inloggad.
+Inloggad utan att markera “Remember me”. Tar bort session och trycker F5.
+Resultat Man är inloggad och en ny session är skapad.
+Inloggad. Kopierar session till en annan webbläsare som inte är inloggad.
+Resultat Fortfarande inte inloggad och systemet presenterar "The session was corrupted and has been deleted".
+Inloggad, Remember Me. Tar bort session och gör en ny post.
+Resultat Man är fortfarande inloggad och en ny session är startad.
+Inloggad, Remember Me. Tar bort sessionen och  ändrar värdet i cookie.
+Resultat Man är utloggad, kakorna är borta och systemet presenterar "The cookie was corrupted and has been deleted".
+Inloggad, Remember Me. Klickar på logout knappen.
+Resultat Man är utloggad och både session och kakorna är borta.
+Inlägg - FrontPage
+Postar en post.
+Resultat posten blir postad.
+Posta en tom post.
+Resultat Systemet presenterar "Please write somthing".
+Posta en tom post med bild.
+Resultat Systemet presenterar "Please write somthing".
+Postar med taggar
+Resultat Systemet presenterar “Please avoid using taggs”.
+Postar med whitespace
+Resultat Systemet presenterar "Please write somthing".
+Postar post med bild.
+Resultat Kommentaren blir postad med bilden.
+Klickar på delete.
+Resultat Både bild och kommentar tas bort Systemet presenterar “Your post has been deleted”.
+Klickar på delete. Ändrar den gömda knappens value till ett annat existerande och klickar på Delete
+Resultat Fönstret försvinner och ingen post är borttagen.
+Klickar på edit.
+Resultat Ett popup fönster uppenbarar sig med en textbox med text på den post som skulle ändras.
+Klickar på edit, ändrar kommentaren i fönstret och klickar på Edit Post.
+Resultat Systemet presenterar “Your post has been updated”.
+Trycker på edit, ändrar den gömda knappens value till ett annat existerande, ändrar posten och klickar på Edit Post.
+Resultat Fönstret försvinner och ingen post är ändrad.
+Trycker på edit,ändrar innehållet i fältet och klickar på X knappen.
+Resultat Fönstret försvinner och posten är inte ändrad.
+Admin tar bort någon annans post.
+Resultat Post tas bort. Systemet presenterar “Your post has been deleted”.
+Admin uppdaterar någon annans post.
+Resultat Kommentaren uppdateras.
+Laddar upp en fil som inte är jpg, png eller jpeg och en post.
+Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.” Ingen post blev skapad
+Laddar upp en och ändrar bild namn från test.png till test.jpg och en post.
+Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.” Ingen post blev skapad.
+Laddar upp en och ändrar bild namn från test.jpg till test.png och en post.
+Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.” Ingen post blev skapad.
+
+Ändra, ta bort inlägg- userpage
+
+Klickar på delete.
+Resultat post tas bort Systemet presenterar “Your post has been deleted”.
+Ändrar den gömda knappens value till ett annat existerande och klickar på Delete
+Resultat Fönstret försvinner och ingen post är borttagen.
+Klickar på edit.
+Resultat Ett popup fönster uppenbarar sig med en textbox med text på den post som skulle ändras.
+Klickar på edit, ändrar kommentaren i fönstret och klickar på Edit Post.
+Resultat Systemet presenterar “Your post has been updated”.
+Trycker på edit, ändrar den gömda knappens value till ett annat existerande, ändrar posten och klickar på Edit Post.
+Resultat Fönstret försvinner och ingen post är ändrad.
+Trycker på edit,ändrar innehållet i fältet och klickar på X knappen.
+Resultat Fönstret försvinner och posten är inte ändrad.
+
+Ändra lösenord - Userpage
+
+Postar med ett blankt fält.
+Resultat Systemet presenterar “Password is missing”.
+Postar med whitespace.
+Resultat Systemet presenterar "Invalid letters in password".
+Postar med taggar.
+Resultat Systemet presenterar "Invalid letters in password"
+Postar med 5 eller minre bokstäver.
+Result Systemet presenterar "At least 6 letters in your password".
+Postar med giltiga värden.
+Resultat Systemet presenterar "The new password have been saved".
+
+Ändra Profilbild
+Laddar upp en giltig bild och trycker Upload New.
+Resultat Systemet presenterar "Your Profile picture has been changed". Profilbilden är ändrad
+
+
+Trycker på Upload New utan att ha laddat upp något.
+Resultat Systemet presenterar "Picture is missing".
+
+Klickar på Upload New med uppladdad fil som inte är jpg, png eller jpeg.
+
+Resultat Systemet presenterar "Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type".
+
+Klickar på Upload New med uppladdad fil som inte är jpg, png eller jpeg.
+
+Resultat Systemet presenterar "Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type".
+
+Klickar på Upload New med ändrad bildnamn från test.png till test.jpg.
+Resultat Systemet presenterar "Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type".
+
+Klickar på Upload New med ändrad bildnamn från test.jpg till test.png.
+Resultat Systemet presenterar "Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type".
+
+Klickar på Upload New med en bild större än 3 mb.
+Resultat Systemet presenterar "The picture is to big. No more than 3 mb".
+
+Ladda upp bilder - usergallery
+
+Klickar på Gallery länken.
+
+Resultat Systemet presenterar användarens galleri.
+
+Klickar på Upload Picture med tomma fält.
+
+Resultat Systemet presenterar “Picture is missing”.
+
+Klickar på Upload Picture med endast Title ifylt.
+
+Resultat Systemet presenterar “Picture is missing”.
+
+Klickar på Upload Picture med endast uppladdad bild.
+
+Resultat Systemet presenterar “A title is missing”.
+
+Klickar på Upload Picture med uppladdad bild och taggar i Title.
+
+Resultat Systemet presenterar “Please avoid using taggs in the title input”.
+
+Klickar på Upload Picture med uppladdad bild och whitespace i title.
+
+Resultat Systemet presenterar “A title is missing”.
+
+Klickar på Upload Picture med uppladdad bild och giltig title.
+
+Resultat En ny bild blir uppladdad i gallery.
+
+
+Klickar på Upload Picture med uppladdad bild och giltig titel och giltig description.
+
+Resultat En ny bild blir uppladdad i gallery.
+
+Klickar på Upload Picture med uppladdad bild och giltig titel och whitespace i description.
+
+Resultat En ny bild blir uppladdad i gallery. Description saknas.
+
+Klickar på Upload Picture med uppladdad bild och giltig titel och taggar i description.
+
+Resultat Systemet presenterar “Please avoid using taggs in the comment input”.
+
+Klickar på Upload Picture med uppladdad fil som inte är jpg, png eller jpeg.
+	giltig title.
+
+Resultat Systemet presenterar “Invalid file! please make sure the file is of type png,
+     jpg or jpeg and that the img format is the same as the img type”.
+
+Klickar på Upload Picture med ändrad bildnamn från test.png till test.jpg och en title.
+Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg    	    or jpeg and that the img format is the same as the img type.” 
+     Ingen bild blev skapad.
+Trycker på Edit knappen under en bild i galleriet.
+Resultat Systemet presenterar en popup ruta med den nuvarande titeln och beskrivningen i vars sin textruta.
+Trycker på Edit knappen utan att ändra fälten.
+Resultat popup rutan försvinner och bildens titel och beskrivning är oförändrade.
+Trycker på Edit knappen med blanka fält.
+Resultat Systemet presenterar “A title is missing”.
+Trycker på Edit knappen med blankt titel fält och ifylld beskrivning.
+Resultat Systemet presenterar “A title is missing”
+Trycker på Edit knappen med blankt beskrivning och giltig titel.
+Resultat Popup rutan försvinner och bilden ny tidel och blank beskrivning.
+
+Trycker på edit knappen med whitespace i title.
+Resultat Systemet presenterar “A title is missing”.
+Trycker på edit knappen med taggar i title.
+Resultat Systemet presenterar “please avoid using taggs in the title input”.
+Trycker på edit knappen med taggar i description.
+Resultat Systemet presenterar “Please avoid using taggs in the comment input”.
+Trycker på edit kanppen med whitespace i description.(Description var redan tomt)
+Resultat Popuprutan försvinner och bildens beskrivning är blank.
+Trycker på edit kanppen med whitespace i description.(Description var redan ifyllt)
+Resultat Systemet presenterar “Your picture’s title and description has been updated”. Bildens beskrivning är blank.
+Ändrar den gömnda knappens value till ett existerande och trycker på Edit Gallery.
+Resultat Popup rutan försvinner och inget galleri är ändrat.
+Trycker på delete nedanför bilden.
+Resultat En popupruta visas och undrar om man är riktigt säker.
+Trycker på delete nedanför bilden och sen cancle.
+Resultat Popup rutan försvinner och inget galleri är borttaget.
+Trycker på delete i popup rutan.
+Resultat. Systemet presenterar “Your picture has been deleted”. Bilden är borta från galleriet.
+Ändrar den gömda knappens value till ett annat existerande i delete popuprutan.
+Resultat Popup rutan försvinner och ingen bild har tagits bort.
+
+Kommentera bild - usergallery
+Navigera till usergallery och tryck på en bild.
+Resultat Bilden och kommentarer presenteras i en stor popupruta.
+Postar en kommentar.
+Resultat kommentaren blir postad.
+Posta en tom kommentar.
+Resultat Systemet presenterar "Please write somthing".
+Postar med taggar
+Resultat Systemet presenterar “Please avoid using taggs”.
+Postar med whitespace
+Resultat Systemet presenterar "Please write somthing".
+Klickar på delete.
+Resultat Kommentar tas bort Systemet presenterar “Your comment has been deleted”.
+Ändrar den gömda knappens value till ett annat existerande och klickar på Delete
+Resultat Ingen kommentar är borttagen.
+Klickar på edit.
+Resultat Ett popup fönster uppenbarar sig med en textbox med text på den post som skulle ändras.
+Klickar på edit, ändrar kommentaren i fönstret och klickar på Edit Post.
+Resultat Systemet presenterar “Your komment has been updated”.
+Trycker på edit, ändrar den gömda knappens value till ett annat existerande, ändrar posten och klickar på Edit Post.
+Resultat Ingen kommentar är ändrad.
+Trycker på edit, ändrar innehållet i fältet och klickar på X knappen.
+Resultat Fönstret försvinner och posten är inte ändrad.
+Admin tar bort någon annans kommentar.
+Resultat Kommentar tas bort. Systemet presenterar “Your comment has been deleted”.
+Admin uppdaterar någon annans post.
+Resultat Systemet presenterar “Your comment has been updated”. Kommentaren uppdateras.
+Laddar upp en fil som inte är jpg, png eller jpeg och en post.
+Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.” Ingen post blev skapad
+Laddar upp en och ändrar bild namn från test.png till test.jpg och en post.
+Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.” Ingen post blev skapad.
+Laddar upp en och ändrar bild namn från test.jpg till test.png och en post.
+Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.” Ingen post blev skapad.
+Laddar upp en bild som är större än 3 mb
+Resultat Systemet presenterar “The picture is to big. No more than 3 mb!”
+Laddar upp en post och trycker sedan på F5.
+Resultat Ingen duplisering ut av kommentaren.
+
+
+Admin ändrar, tar bort medlem - memberPage
+Trycker på Update med ett blankt fält.
+Resultat Systemet presenterar “Password is missing”.
+Trycker på Update med whitespace.
+Resultat Systemet presenterar "Invalid letters in password".
+Trycker på Update med taggar.
+Resultat Systemet presenterar "Invalid letters in password"
+Trycker på Update med 5 eller minre bokstäver.
+Result Systemet presenterar "At least 6 letters in your password".
+Trycker på Update med giltiga värden.
+Resultat Systemet presenterar "The new password have been saved".
+
+Trycker på delete hos en medlem.
+Resultat En popup rutan uppenbarar sig och frågar om man är riktigt säker.
+
+I delete popuprutan trycker admin på cancel.
+
+Resultat . Popuprutan försvinner och ingen medlem är borta.
+I delete popuprutan trycker admin på Delete.
+
+Resultat  Systemet presenterar “The member has been deleted”. Popuprutan försvinner och ingen medlem är borta.
+
+URL - Test 
+ Navigera till sidan. “latana.se/PHP/myFace/”
+Resultat  Loginsidan visas. 
+ Navigera till login-sidan. “latana.se/PHP/myFace/index.php”
+Resultat  Loginsidan visas.
+Navigera till login-sidan “latana.se/PHP/testing/index.php?login”
+Resultat  Loginsidan visas.
+ Navigera till “latana.se/PHP/myFace/” med cookies aktiva. 
+Resultat  frontpage visas.
+ Navigera till “latana.se/PHP/myFace/index.php” med cookies aktiva.
+Resultat  frontpage visas.
+ Navigera till “latana.se/PHP/myFace/?userPage” med cookies aktiva.
+Resultat  userPage visas.
+ Navigera till “latana.se/PHP/myFace/?memberPage” med cookies aktiva.
+Resultat  memberPage visas.
+ Navigera till “latana.se/PHP/myFace/?usergallery” med cookies aktiva.
+Resultat  userPage visas.
+ Navigera till “latana.se/PHP/myFace/?usergallery=userthatexist” med cookies aktiva.
+Resultat  usergallery visas.
+ Navigera till “latana.se/PHP/myFace/?usergallery=userdontexist” med cookies aktiva.
+Resultat  usergallery visas med texten “The selected user could not be found!”
+
+ Navigera till “latana.se/PHP/myFace/?usergalleryusername” med cookies aktiva.
+Resultat  frontpage visas.
+
+ Navigera till “latana.se/PHP/myFace/?usergallery=userdontexist&gallery=5” med cookies aktiva.
+Resultat  usergallery visas med texten “The selected user could not be found!”
+
+ Navigera till “latana.se/PHP/myFace/?usergallery=userexist&gallery=5” med cookies aktiva. Numret existerar inte.
+Resultat  usergallery visas med texten “The selected img could not be found!”
+
+ Navigera till “latana.se/PHP/myFace/?usergallery=userexist&gallery=abc” med cookies aktiva. Numret existerar inte.
+Resultat  usergallery visas med texten “The selected img could not be found!”
+
+ Navigera till “latana.se/PHP/myFace/?usergallery=userexist=abc” med cookies aktiva.
+Resultat  usergallery visas.
+
+ Navigera till “latana.se/PHP/myFace/?usergallery” med cookies aktiva.
+Resultat  usergallery visas med texten “The selected user could not be found!”.
+
+
+ Navigera till “latana.se/PHP/myFace/?usergallery” ingen session eller cookies.
+Resultat  Loginsidan visas.
+
+ Navigera till “latana.se/PHP/myFace/?wrongsite” ingen session eller cookies.
+Resultat  errorsidan visas med meddelandet “The page cannot be found or an unexpected error has accerd. Please click on the home link and try again”.
+
+ Navigera till “latana.se/PHP/myFace/index.php?wrongsite” ingen session eller cookies.
+Resultat  frontPage visas.
+
+
+
+
