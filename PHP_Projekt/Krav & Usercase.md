@@ -33,12 +33,12 @@ bara meddela om nya bilder som de laddat upp.
 ###Medlem
 1.	Medlemmen registrerar sig.
 2.	Medlemmen loggar in.
-3.	Medlemmen laddar upp en bild på sitt galleri.
-4.	Medlemmen ändrar en bild på sitt galleri
-4.	Medlemmen tar bort bild från sitt eget galleri.
-5.	Medlemmen lägger upp en post på systemets centrala platts.
-6.	Medlemmen ändrar något i sin gamla post.
-7.	Medlemmen tar bort sin gamla post.
+3.	Medlemmen lägger upp en post på systemets centrala platts.
+3.	Medlemmen tar bort sin gamla post.
+4.	Medlemmen ändrar något i sin gamla post.
+5.	Medlemmen laddar upp en bild på sitt galleri.
+6.	Medlemmen ändrar en bild på sitt galleri
+7.	Medlemmen tar bort bild från sitt eget galleri.
 8.	Medlemmen ändrar sitt lösenord.
 9.	Medlemmen lägger upp en kommentar på en bild
 10.	Medlemmen ändrar en kommentar på en bild
