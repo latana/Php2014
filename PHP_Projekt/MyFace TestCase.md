@@ -1807,7 +1807,7 @@ Resultat Systemet presenterar "The new password have been saved".
 
 **Input:**
 
- Navigera till sidan. “latana.se/PHP/myFace/”
+ Navigera till sidan. “latana.se/PHP/MyFace/”
  
 **Output:**
 
@@ -1817,7 +1817,7 @@ Resultat: Loginsidan visas.
 
 **Input:**
 
-Navigera till login-sidan. “latana.se/PHP/myFace/index.php”
+Navigera till login-sidan. “latana.se/PHP/MyFace/index.php”
 
 **Output:**
 
@@ -1827,7 +1827,7 @@ Resultat: Loginsidan visas.
 
 **Input:**
 
-Navigera till login-sidan “latana.se/PHP/testing/index.php?login”
+Navigera till login-sidan “latana.se/PHP/MyFace/index.php?login”
 
 **Output:**
 
@@ -1847,7 +1847,7 @@ Resultat: frontpage visas.
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/index.php” med cookies aktiva.
+ Navigera till “latana.se/PHP/MyFace/index.php” med cookies aktiva.
  
  **Output:**
  
@@ -1857,7 +1857,7 @@ Resultat  frontpage visas.
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/?userPage” med cookies aktiva.
+ Navigera till “latana.se/PHP/MyFace/?userPage” med cookies aktiva.
  
  **Output:**
  
@@ -1867,7 +1867,7 @@ Resultat: userPage visas.
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/?memberPage” med cookies aktiva.
+ Navigera till “latana.se/PHP/MyFace/?memberPage” med cookies aktiva.
  
  **Output**
  
@@ -1877,7 +1877,7 @@ Resultat: memberPage visas.
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/?usergallery” med cookies aktiva.
+ Navigera till “latana.se/PHP/MyFace/?usergallery” med cookies aktiva.
  
  **Output:**
  
@@ -1887,7 +1887,7 @@ Resultat: userPage visas.
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/?usergallery=userthatexist” med cookies aktiva.
+ Navigera till “latana.se/PHP/MyFace/?usergallery=userthatexist” med cookies aktiva.
  
  **Output:**
  
@@ -1897,7 +1897,7 @@ Resultat: usergallery visas.
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/?usergallery=userdontexist” med cookies aktiva.
+ Navigera till “latana.se/PHP/MyFace/?usergallery=userdontexist” med cookies aktiva.
  
  **Output:**
  
@@ -1907,7 +1907,7 @@ Resultat: usergallery visas med texten “The selected user could not be found!�
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/?usergalleryusername” med cookies aktiva.
+ Navigera till “latana.se/PHP/MyFace/?usergalleryusername” med cookies aktiva.
  
  **Output:**
  
@@ -1917,7 +1917,7 @@ Resultat  frontpage visas.
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/?usergallery=userdontexist&gallery=5” med cookies aktiva.
+ Navigera till “latana.se/PHP/MyFace/?usergallery=userdontexist&gallery=5” med cookies aktiva.
  
  **Output:**
  
@@ -1927,7 +1927,7 @@ Resultat  usergallery visas med texten “The selected user could not be found!�
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/?usergallery=userexist&gallery=5” med cookies aktiva. Numret existerar inte.
+ Navigera till “latana.se/PHP/MyFace/?usergallery=userexist&gallery=5” med cookies aktiva. Numret existerar inte.
  
  **Output:**
 Resultat  usergallery visas med texten “The selected img could not be found!”
@@ -1936,7 +1936,7 @@ Resultat  usergallery visas med texten “The selected img could not be found!�
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/?usergallery=userexist&gallery=abc” med cookies aktiva. Numret existerar inte.
+ Navigera till “latana.se/PHP/MyFace/?usergallery=userexist&gallery=abc” med cookies aktiva. Numret existerar inte.
  
  **Output:**
  
@@ -1946,7 +1946,7 @@ Resultat  usergallery visas med texten “The selected img could not be found!�
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/?usergallery=userexist=abc” med cookies aktiva.
+ Navigera till “latana.se/PHP/MyFace/?usergallery=userexist=abc” med cookies aktiva.
  
  **Output:**
  
@@ -1956,7 +1956,7 @@ Resultat  usergallery visas.
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/?usergallery” med cookies aktiva.
+ Navigera till “latana.se/PHP/MyFace/?usergallery” med cookies aktiva.
  
  **Output:**
  
@@ -1966,7 +1966,7 @@ Resultat  usergallery visas med texten “The selected user could not be found!�
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/?usergallery” ingen session eller cookies.
+ Navigera till “latana.se/PHP/MyFace/?usergallery” ingen session eller cookies.
  
  **Output:**
  
@@ -1976,7 +1976,7 @@ Resultat  Loginsidan visas.
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/?wrongsite” ingen session eller cookies.
+ Navigera till “latana.se/PHP/MyFace/?wrongsite” ingen session eller cookies.
  
  **Output:**
  
@@ -1986,11 +1986,49 @@ Resultat  errorsidan visas med meddelandet “The page cannot be found or an une
 
 **Input:**
 
- Navigera till “latana.se/PHP/myFace/index.php?wrongsite” ingen session eller cookies.
+ Navigera till “latana.se/PHP/MyFace/index.php?wrongsite” ingen session eller cookies.
  
  **Output:**
 Resultat  frontPage visas.
 
-### Testfall 15.1
+### Testfall 15.1 HTML Validering
 
+Se till att genererad HTML/CSS validerar enligt http://validator.w3.org/
 
+1. Validera http://latana.se/PHP/MyFace/index.php
+
+### Testfall 15.2 HTML Validering
+
+Se till att genererad HTML/CSS validerar enligt http://validator.w3.org/
+
+1. Validera http://latana.se/PHP/MyFace/index.php?register
+
+### Testfall 15.2 HTML Validering
+
+Se till att genererad HTML/CSS validerar enligt http://validator.w3.org/
+
+1. Validera http://latana.se/PHP/MyFace/index.php?frontPage
+
+### Testfall 15.3 HTML Validering
+
+Se till att genererad HTML/CSS validerar enligt http://validator.w3.org/
+
+1. Validera http://latana.se/PHP/MyFace/index.php?memberPage
+
+### Testfall 15.4 HTML Validering
+
+Se till att genererad HTML/CSS validerar enligt http://validator.w3.org/
+
+1. Validera http://latana.se/PHP/MyFace/index.php?userpage
+
+### Testfall 15.5 HTML Validering
+
+Se till att genererad HTML/CSS validerar enligt http://validator.w3.org/
+
+1. Validera http://latana.se/PHP/MyFace/index.php?usergallery=Username
+
+### Testfall 15.5 HTML Validering
+
+Se till att genererad HTML/CSS validerar enligt http://validator.w3.org/
+
+1. Validera http://latana.se/PHP/MyFace/index.php?usergallery=Username&gallery=2
