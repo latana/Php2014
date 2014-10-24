@@ -318,6 +318,23 @@
 2. Kakorna är borta
 3. Ej inloggad
 
+### Testfall 2.15 Ändra tid i cookies
+
+**Input:**
+
+1. Logga in (Bocka i Remember me)
+2. ta bort sessionen
+3. Ändra tiden i kakan.
+4. Vänta tills kakans ursprungliga tid gått ut.
+5. Ladda om sidan.
+
+**Output:**
+
+1. Systemet presenterar "The cookie was corrupted and has been deleted".
+2. Kakorna är borta
+3. Ej inloggad
+
+
 ### Testfall 3.1 Postar en post
 
 **Input:**
