@@ -160,8 +160,6 @@ Ok
 ### Testfall 6.5 Lyckad ändring ut av lösenord
 Ok
 
-Resultat Systemet presenterar "The new password have been saved".
-
 ### Testfall 7.1 Lyckad ändring av profilbild
 Ok
 
