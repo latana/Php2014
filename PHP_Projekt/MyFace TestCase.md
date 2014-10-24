@@ -1786,13 +1786,17 @@ Resultat Systemet presenterar "The new password have been saved".
 
 ### Alternativa scenarion URL - Test
 
+### Testfall 14.1
+
 **Input:**
 
  Navigera till sidan. “latana.se/PHP/myFace/”
  
 **Output:**
 
-Resultat  Loginsidan visas. 
+Resultat: Loginsidan visas. 
+
+### Testfall 14.2
 
 **Input:**
 
@@ -1800,7 +1804,9 @@ Navigera till login-sidan. “latana.se/PHP/myFace/index.php”
 
 **Output:**
 
-Resultat  Loginsidan visas.
+Resultat: Loginsidan visas.
+
+### Testfall 14.3
 
 **Input:**
 
@@ -1808,7 +1814,9 @@ Navigera till login-sidan “latana.se/PHP/testing/index.php?login”
 
 **Output:**
 
-Resultat  Loginsidan visas.
+Resultat: Loginsidan visas.
+
+### Testfall 14.4
 
 **Input:**
 
@@ -1816,7 +1824,9 @@ Resultat  Loginsidan visas.
  
 **Output:**
 
-Resultat  frontpage visas.
+Resultat: frontpage visas.
+
+### Testfall 14.5
 
 **Input:**
 
@@ -1826,13 +1836,17 @@ Resultat  frontpage visas.
  
 Resultat  frontpage visas.
 
+### Testfall 14.6
+
 **Input:**
 
  Navigera till “latana.se/PHP/myFace/?userPage” med cookies aktiva.
  
  **Output:**
  
-Resultat  userPage visas.
+Resultat: userPage visas.
+
+### Testfall 14.7
 
 **Input:**
 
@@ -1840,7 +1854,9 @@ Resultat  userPage visas.
  
  **Output**
  
-Resultat  memberPage visas.
+Resultat: memberPage visas.
+
+### Testfall 14.8
 
 **Input:**
 
@@ -1848,7 +1864,9 @@ Resultat  memberPage visas.
  
  **Output:**
  
-Resultat  userPage visas.
+Resultat: userPage visas.
+
+### Testfall 14.9
 
 **Input:**
 
@@ -1856,7 +1874,9 @@ Resultat  userPage visas.
  
  **Output:**
  
-Resultat  usergallery visas.
+Resultat: usergallery visas.
+
+ ### Testfall 14.10
 
 **Input:**
 
@@ -1864,7 +1884,9 @@ Resultat  usergallery visas.
  
  **Output:**
  
-Resultat  usergallery visas med texten “The selected user could not be found!”
+Resultat: usergallery visas med texten “The selected user could not be found!”
+
+### Testfall 14.11
 
 **Input:**
 
@@ -1874,6 +1896,8 @@ Resultat  usergallery visas med texten “The selected user could not be found!�
  
 Resultat  frontpage visas.
 
+### Testfall 14.12
+
 **Input:**
 
  Navigera till “latana.se/PHP/myFace/?usergallery=userdontexist&gallery=5” med cookies aktiva.
@@ -1882,12 +1906,16 @@ Resultat  frontpage visas.
  
 Resultat  usergallery visas med texten “The selected user could not be found!”
 
+### Testfall 14.12
+
 **Input:**
 
  Navigera till “latana.se/PHP/myFace/?usergallery=userexist&gallery=5” med cookies aktiva. Numret existerar inte.
  
  **Output:**
 Resultat  usergallery visas med texten “The selected img could not be found!”
+
+### Testfall 14.13
 
 **Input:**
 
@@ -1897,6 +1925,8 @@ Resultat  usergallery visas med texten “The selected img could not be found!�
  
 Resultat  usergallery visas med texten “The selected img could not be found!”
 
+### Testfall 14.14
+
 **Input:**
 
  Navigera till “latana.se/PHP/myFace/?usergallery=userexist=abc” med cookies aktiva.
@@ -1904,6 +1934,8 @@ Resultat  usergallery visas med texten “The selected img could not be found!�
  **Output:**
  
 Resultat  usergallery visas.
+
+### Testfall 14.15
 
 **Input:**
 
@@ -1913,6 +1945,8 @@ Resultat  usergallery visas.
  
 Resultat  usergallery visas med texten “The selected user could not be found!”.
 
+### Testfall 14.16
+
 **Input:**
 
  Navigera till “latana.se/PHP/myFace/?usergallery” ingen session eller cookies.
@@ -1921,6 +1955,8 @@ Resultat  usergallery visas med texten “The selected user could not be found!�
  
 Resultat  Loginsidan visas.
 
+### Testfall 14.17
+
 **Input:**
 
  Navigera till “latana.se/PHP/myFace/?wrongsite” ingen session eller cookies.
@@ -1928,6 +1964,8 @@ Resultat  Loginsidan visas.
  **Output:**
  
 Resultat  errorsidan visas med meddelandet “The page cannot be found or an unexpected error has accerd. Please click on the home link and try again”.
+
+### Testfall 14.18
 
 **Input:**
 
