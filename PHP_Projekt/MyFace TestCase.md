@@ -469,7 +469,7 @@
 
 1. Klicka på Edit knappen i posten
 2. Ändra innehållet i textrutan.
-3. Klicka på Edit Post
+3. Klicka på Edit
 
 **Output:**
 
@@ -487,7 +487,7 @@
 3. Välj "Inspect element"
 4. Hitta den gömda edit knappen
 5. Ändra dess value med en siffra mindre tex 90 till 89.
-6. Tryck på Edit Post knappen
+6. Tryck på Edit knappen
 
 **Output:**
 
@@ -570,7 +570,7 @@
 1. Klickar på edit knappen i en post
 2. Popup rutan visas
 3. Ändrar innehållet i textrutan
-4. Klickar på Edit Post
+4. Klickar på Edit
 
 **Output:**
 
@@ -589,7 +589,7 @@
 3. Välj "Inspect element"
 4. Hitta den gömda edit knappen
 5. Ändra dess value med en siffra mindre tex 90 till 89.
-6. Tryck på Edit Post knappen
+6. Tryck på Edit knappen
 
 **Output:**
 
@@ -1228,18 +1228,86 @@ Resultat Systemet presenterar "The new password have been saved".
 1. Systemet presenterar “Your comment has been deleted”.
 2. Kommentar är borta.
 
+### Testfall 12.2 Delete kommentar. Ta bort en annan medlems kommentar
+
+**Input:**
+
+1. Lägg upp 2 kommentarer från två olika användare
+2. Logga in med den senaste
+3. Navigera till galleriet
+4. Klicka på bilden med kommentarer
+2. Högerklicka på delete knappen på din senaste kommentar
+3. Välj "Inspect element"
+4. Hitta den gömda delete knappen
+5. Ändra dess value till en siffra en annan kommentar har
+6. Tryck på delete knappen.
+
+**Output:**
+
+1. Ingen kommentar är borttagen
 
 
-Ändrar den gömda knappens value till ett annat existerande och klickar på Delete
-Resultat Ingen kommentar är borttagen.
-Klickar på edit.
-Resultat Ett popup fönster uppenbarar sig med en textbox med text på den post som skulle ändras.
-Klickar på edit, ändrar kommentaren i fönstret och klickar på Edit Post.
-Resultat Systemet presenterar “Your komment has been updated”.
-Trycker på edit, ändrar den gömda knappens value till ett annat existerande, ändrar posten och klickar på Edit Post.
-Resultat Ingen kommentar är ändrad.
-Trycker på edit, ändrar innehållet i fältet och klickar på X knappen.
-Resultat Fönstret försvinner och posten är inte ändrad.
+### Testfall 13.1 Edit kommentar. Popupfönster
+
+**Input:**
+
+1. Navigera till galleriet.
+2. Klicka på en bild med kommentarer.
+3. Klicka på edit under en kommentar.
+
+**Output:**
+
+1. Ett popup fönser visas med kommentaren i en textbox.
+
+### Testfall 13.2 Edit kommentar. Lyckad Ändrad kommentar
+
+**Input:**
+
+1. Navigera till galleriet.
+2. Klicka på en bild med kommentarer.
+3. Klicka på edit under en kommentar.
+4. Textbox "Jag är en kommentar"
+5. Klicka på Edit
+
+**Output:**
+
+1. Systemet presenterar "Your comment has been updated"
+2. Ett popup fönser visas med kommentaren i en textbox.
+
+### Testfall 13.3 Edit kommentar. Misslyckad ändra en annan medlems kommentar
+
+**Input:**
+
+1. Lägg upp 2 kommentarer från två olika användare
+2. Logga in med den senaste
+3. Klicka på din senast kommenterade bild
+2. Högerklicka på edit knappen i bild popup fönstret
+3. Välj "Inspect element"
+4. Hitta den gömda edit knappen
+5. Ändra dess value med en existerande siffra.
+6. Tryck på Edit knappen
+
+**Output:**
+
+1. Fönstret försvinner
+2. Ingen kommentar är ändrad.
+
+### Testfall 13.4 Edit kommentar. Avbryt ändring av kommentar
+
+**Input:**
+
+1. Navigera till galleriet.
+2. Klicka på en bild med kommentarer.
+3. Klicka på edit under en kommentar.
+4. Textbox "Jag är en kommentar"
+5. Klicka på X knappen
+
+**Output:**
+
+1. Popup fönstret försvinner
+2. Ingen kommentar är ändrad
+
+
 Admin tar bort någon annans kommentar.
 Resultat Kommentar tas bort. Systemet presenterar “Your comment has been deleted”.
 Admin uppdaterar någon annans post.
