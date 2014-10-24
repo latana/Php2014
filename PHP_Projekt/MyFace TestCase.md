@@ -1320,7 +1320,7 @@ Resultat Systemet presenterar "The new password have been saved".
 1. Popup fönster visas 
 2. Textbox med text av den post som skulle ändras.
 
-### Testfall 1.2 Lyckad ändrad medlems kommentar
+### Testfall Admin 1.2 Lyckad ändrad medlems kommentar
 
 **Input:**
 
@@ -1334,7 +1334,7 @@ Resultat Systemet presenterar "The new password have been saved".
 2. Post är ändrad
 
 
-### Testfall 1.3 Avbruten edit
+### Testfall Admin 1.3 Avbruten edit
 
 **Input:**
 
@@ -1348,7 +1348,7 @@ Resultat Systemet presenterar "The new password have been saved".
 2. Ingen post är ändrad.
 
 
-### Testfall 1.4 Popup fönster i userPage
+### Testfall Admin 1.4 Popup fönster i userPage
 
 **Input:**
 
@@ -1359,7 +1359,7 @@ Resultat Systemet presenterar "The new password have been saved".
 1. Ett popup fönster visas
 2. Textbox med text på den post som skulle ändras.
 
-### Testfall 1.5 Lyckad ändring av post i userpage
+### Testfall Admin 1.5 Lyckad ändring av post i userpage
 
 **Input:**
 
@@ -1374,7 +1374,7 @@ Resultat Systemet presenterar "The new password have been saved".
 2. Post är ändrad
 
 
-### Testfall 1.6 Avbruten edit i userPage
+### Testfall Admin 1.6 Avbruten edit i userPage
 
 **Input:**
 
@@ -1387,6 +1387,33 @@ Resultat Systemet presenterar "The new password have been saved".
 
 1. Fönstret försvinner
 2. Ingen post är ändrad.
+
+### Testfall Admin 2.1 Delete post
+
+**Input:**
+
+1. Lägg upp en medlems post
+2. Klickar på delete knappen i medlemens post.
+
+**Output:**
+
+1. Systemet presenterar “Your post has been deleted”.
+2. Både bild och kommentar tas bort.
+
+
+### Testfall Admin 2.2 Delete post i userpage
+
+**Input:**
+
+1. Klicka på användarnamnet på den vänstra sidan
+2. Navigera till userpage
+3. Klicka på delete knappen i posten
+
+**Output:**
+
+1. Systemet presenterar “Your post has been deleted”.
+2. Posten togs bort
+
 
 
 
