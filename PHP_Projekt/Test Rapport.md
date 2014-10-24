@@ -262,7 +262,7 @@ Ok
 ### Testfall 10.3 Delete gallery. Delete Gallery picture
 Ok
 
-### Testfall 10.4 Delete gallery. Misslyckas att ta bort någon annars post
+### Testfall 10.4 Delete gallery. Misslyckas att ta bort någon annars bild
 Ok
 
 ### Testfall 11.1 Kommentera bild. Navigera till bild 
