@@ -1077,31 +1077,80 @@ Resultat Systemet presenterar "The new password have been saved".
 2. Systemet presenterar “Your picture’s title and description has been updated”.
 3. Bildens beskrivning är blank. 
 
-### Testfall 9.11 Edit gallery. ändra en annan medlems bild
+### Testfall 9.11 Edit gallery. Ändra en annan medlems bild
 
 **Input**
 
 1. Lägg upp 2 bilder från två olika användare
 2. Logga in med den senaste
-2. Högerklicka på Edit gallery knappen på din senaste bild
-3. Välj "Inspect element"
-4. Hitta den gömda Edit Gallery knappen
-5. Ändra dess value till den första bildens value.
-6. Tryck på Edit Gallery knappen.
+3. Högerklicka på Edit gallery knappen på din senaste bild
+4. Välj "Inspect element"
+5. Hitta den gömda Edit Gallery knappen
+6. Ändra dess value till den första bildens value.
+7. Ändra innehållet i Title
+8. Ändra innehållet i Description
+9. Tryck på Edit Gallery knappen.
 
 **Output:**
 
-1. Ingen bild är borttagen
+1. Ingen bild är förändrad
 
+### Testfall 10.1 Delete gallery. Popup ruta
 
-Trycker på delete nedanför bilden.
-Resultat En popupruta visas och undrar om man är riktigt säker.
-Trycker på delete nedanför bilden och sen cancle.
-Resultat Popup rutan försvinner och inget galleri är borttaget.
-Trycker på delete i popup rutan.
-Resultat. Systemet presenterar “Your picture has been deleted”. Bilden är borta från galleriet.
-Ändrar den gömda knappens value till ett annat existerande i delete popuprutan.
-Resultat Popup rutan försvinner och ingen bild har tagits bort.
+**Input:**
+
+1. Klicka på delete knappen nedanför bilden
+
+**Output:**
+
+1. En popupruta visas och undrar om man är riktigt säker.
+
+### Testfall 10.2 Delete gallery. Ångrar delete
+
+**Input:**
+
+1. Klicka på delete knappen nedanför bilden
+2. Popupfönster visas.
+3. Klicka på Cancle
+
+**Output:**
+
+1. Popupfönstret försvinner
+2. Ingen bild är borttaget
+
+### Testfall 10.3 Delete gallery. Delete Gallery picture
+
+**Input:**
+
+1. Klicka på delete knappen nedanför bilden
+2. Popupfönster visas.
+3. Klicka på Delete
+
+**Output:**
+
+1. Popupfönstret försvinner
+2. Systemet presenterar “Your picture has been deleted”.
+2. Bilden är borttaget
+
+### Testfall 10.4 Delete gallery. Misslyckas att ta bort någon annars post
+
+**Input**
+
+1. Lägg upp 2 bilder från två olika användare
+2. Logga in med den senaste
+2. Högerklicka på Delete knappen på din senaste bild
+3. Välj "Inspect element"
+4. Hitta den gömda Delete knappen
+5. Ändra dess value till den första bildens value.
+6. Tryck på Delete knappen.
+
+**Output:**
+
+1. Ingen bild tas bort.
+2. 
+
+### Testfall 11.1 Navigera till bild
+
 
 Kommentera bild - usergallery
 Navigera till usergallery och tryck på en bild.
