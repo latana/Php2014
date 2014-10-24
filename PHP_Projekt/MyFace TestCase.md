@@ -1134,7 +1134,7 @@ Resultat Systemet presenterar "The new password have been saved".
 
 ### Testfall 10.4 Delete gallery. Misslyckas att ta bort någon annars post
 
-**Input**
+**Input:**
 
 1. Lägg upp 2 bilder från två olika användare
 2. Logga in med den senaste
@@ -1149,12 +1149,23 @@ Resultat Systemet presenterar "The new password have been saved".
 1. Ingen bild tas bort.
 2. 
 
-### Testfall 11.1 Navigera till bild
+### Testfall 11.1 Navigera till bild 
+
+**Input:**
+
+1. Klicka på Gallery
+2. Klicka på en bild
+
+**Output:**
+
+1. Popup rutan visas
+2. Bilden och kommentarer presenteras i popupruta.
+
+### Testfall 11.2 
 
 
-Kommentera bild - usergallery
-Navigera till usergallery och tryck på en bild.
-Resultat Bilden och kommentarer presenteras i en stor popupruta.
+
+
 Postar en kommentar.
 Resultat kommentaren blir postad.
 Posta en tom kommentar.
