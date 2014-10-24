@@ -2,5 +2,13 @@
 
 ###Översikt
 Jag var nöjd med koden till en början med, men med tiden som projektet växte så växte så blev det svårt för mig att fokusera på en sak i taget. När jag återkom till kod som jag inte tittar sett på länge blev jag väldigt förvirrad. Det är svårt att förutse vad man förstår och inte förstår i framtiden men det var inget lite personliga kommentarer inte kunde lösa.
-Trotts mina tappra kommentarer så hade jag grovt underskattat tiden det skulle ta att underhålla ett sådant projekt. Jag
+Trotts mina tappra kommentarer så hade jag grovt underskattat tiden det skulle ta att underhålla ett sådant projekt.
+
+Jag är inte riktigt nöjd med min refactoring. Jag kunde aldrig bli av med mina funktioner i varje dal klass som använder sig ut av imgpreparer.
+
+Jag är inte heller nöjd med hur min postView frågar sig själv om användaren gör en post och hämtar jämnför ett id från den posten. Men jag ville att postens ruta skulle förvanlas och inte bara läggas till. I framtiden tror jag nog att jag struntar i sådant så länge det är server baserat.
+
+Jag anser att jag misslyckades lite med min struktur mellan mina views och masterview. Tanken var att alla skulle ärva från den men det blev lite strul sen när controllerna kommunicerade med varandra.
+
+
 
