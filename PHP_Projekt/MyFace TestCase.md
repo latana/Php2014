@@ -1215,10 +1215,21 @@ Resultat Systemet presenterar "The new password have been saved".
 1. Systemet presenterar "Please write somthing".
 2. Ingen kommentar blev postad.
 
-### Testfall 12.1
+### Testfall 12.1 Delete kommentar
 
-Klickar på delete.
-Resultat Kommentar tas bort Systemet presenterar “Your comment has been deleted”.
+**Input:**
+
+1. Klicka på en bild
+2. posta en kommentar
+3. Klicka på delete under kommentaren
+
+**Output:**
+
+1. Systemet presenterar “Your comment has been deleted”.
+2. Kommentar är borta.
+
+
+
 Ändrar den gömda knappens value till ett annat existerande och klickar på Delete
 Resultat Ingen kommentar är borttagen.
 Klickar på edit.
