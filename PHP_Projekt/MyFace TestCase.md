@@ -821,10 +821,10 @@ Resultat Systemet presenterar "The new password have been saved".
 
 **Input:**
 
-1.Title "<tagg>en titel </tagg>"
-2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
-3. Välj en bild av typen jpg, png eller jpeg,
-4. Klicka på Upload Picture
+1. Title "<tagg>en titel </tagg>".
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen.
+3. Välj en bild av typen jpg, png eller jpeg.
+4. Klicka på Upload Picture.
 
 **Output:**
 
