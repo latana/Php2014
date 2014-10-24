@@ -1077,10 +1077,23 @@ Resultat Systemet presenterar "The new password have been saved".
 2. Systemet presenterar “Your picture’s title and description has been updated”.
 3. Bildens beskrivning är blank. 
 
-Trycker på edit kanppen med whitespace i description.(Description var redan ifyllt)
-Resultat Systemet presenterar “Your picture’s title and description has been updated”. Bildens beskrivning är blank.
-Ändrar den gömnda knappens value till ett existerande och trycker på Edit Gallery.
-Resultat Popup rutan försvinner och inget galleri är ändrat.
+### Testfall 9.11 Edit gallery. ändra en annan medlems bild
+
+**Input**
+
+1. Lägg upp 2 bilder från två olika användare
+2. Logga in med den senaste
+2. Högerklicka på Edit gallery knappen på din senaste bild
+3. Välj "Inspect element"
+4. Hitta den gömda Edit Gallery knappen
+5. Ändra dess value till den första bildens value.
+6. Tryck på Edit Gallery knappen.
+
+**Output:**
+
+1. Ingen bild är borttagen
+
+
 Trycker på delete nedanför bilden.
 Resultat En popupruta visas och undrar om man är riktigt säker.
 Trycker på delete nedanför bilden och sen cancle.
