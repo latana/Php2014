@@ -1497,89 +1497,440 @@ Resultat Systemet presenterar "The new password have been saved".
 
 
 
+### Testfall Admin 5.1 Edit medlem galleri popup
+
+**Input:**
+
+2. Klicka på Edit under medlemens bild
+
+**Output:**
+
+1. En popup ruta visas med titel och beskrivning i textrutan.
+
+### Testfall Admin 5.2 Edit medlem galleri. Ingen ändring
+
+**Input:**
+
+1. Klicka på edit under medlemens bild.
+2. Popup rutan visas.
+3. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner.
+2. Ingen bild blev ändrad.
+
+### Testfall Admin 5.3 Edit medlemens galleri.Blanka fält.
+
+**Input:**
+
+1. Klicka på edit under medlemens bild.
+2. Popuprutan visas.
+3. Töm New Title
+4. Töm Description
+5. Klicka på Edit Gallery
+
+**Output:**
+
+1. Pipup rutan försvinner
+2. Systemet presenterar “A title is missing”.
+3. Bilden är oförändrad
+
+### Testfall Admin 5.4 Edit medlem galleri. blankt titel fält och ifylld beskrivning
+
+**Input:**
+
+1. Klicka på edit under medlemens bild.
+2. Popuprutan visas.
+3. Töm title
+4. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner
+2. Systemet presenterar “A title is missing”
+3. Bilden är orändrad
+
+### Testfall Admin 5.5 Edit member galleri. Giltig title utan description
+
+**Input:**
+
+1. Klicka på edit under medlemens bild.
+2. Popuprutan visas.
+3. Töm Description
+4. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner
+2. Systemet presenterar "Your picture's title and description has been updated"
+3. Bilden har blank beskrivning.
+
+### Testfall Admin 5.6 Edit medlemens galleri. Whitespace i title
+
+**Input:**
+
+1. Klicka på edit under medlemens bild.
+2. Popuprutan visas.
+3. Title "     "
+4. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner
+2. Systemet presenterar “A title is missing”.
+3. Bilden är oförändrad.
+
+### Testfall Admin 5.7 Edit medlemens galleri. Taggar i title
+
+**Input:**
+
+1. Klicka på edit under medlemens bild.
+2. Popuprutan visas.
+3. Title "<tagg>jag är en titel</tagg>"
+4. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner
+2. Systemet presenterar “please avoid using taggs in the title input”.
+3. Bilden är oförändrad.
+
+### Testfall Admin 5.8 Edit medlemens galleri. Taggar i description
+
+**Input:**
+
+1. Klicka på edit under medlemens bild.
+2. Popuprutan visas.
+3. Description "<tagg>jag är en beskrivning</tagg>"
+4. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner
+2. Systemet presenterar “please avoid using taggs in the description input”.
+3. Bilden är oförändrad.
+
+### Testfall Admin 5.9 Edit medlemens galleri. whitespace i description (Description var redan tomt)
+
+**Input:**
+
+1. Klicka på edit under medlemens bild.
+2. Popuprutan visas. (Description var redan tomt)
+3. Description "   "
+4. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner
+2. Bilden är oförändrad.
+
+### Testfall Admin 5.10 Edit medlemens galleri. whitespace i description (Description var redan ifyllt)
+
+**Input:**
+
+1. Klicka på edit under medlemens bild.
+2. Popuprutan visas. (Description var redan ifyllt)
+3. Description "   "
+4. Klicka på Edit Gallery
+
+**Output:**
+
+1. Popuprutan försvinner
+2. Systemet presenterar “Your picture’s title and description has been updated”.
+3. Bildens beskrivning är blank. 
 
 
+### Testfall Admin 6.1 Delete medlemens galleri. Popup ruta
+
+**Input:**
+
+1. Klicka på delete knappen nedanför medlemens bild
+
+**Output:**
+
+1. En popupruta visas och undrar om man är riktigt säker.
+
+### Testfall Admin 6.2 Delete medlemens galleri. Ångrar delete
+
+**Input:**
+
+1. Klicka på delete knappen nedanför medlemens bild
+2. Popupfönster visas.
+3. Klicka på Cancle
+
+**Output:**
+
+1. Popupfönstret försvinner
+2. Ingen bild är borttaget
+
+### Testfall Admin 6.3 Delete medlemens galleri. Delete Gallery picture
+
+**Input:**
+
+1. Klicka på delete knappen nedanför medlemens bild
+2. Popupfönster visas.
+3. Klicka på Delete
+
+**Output:**
+
+1. Popupfönstret försvinner
+2. Systemet presenterar “Your picture has been deleted”.
+2. Bilden är borttaget
+
+### Testfall Admin 7.1 Admin ändrar medlem. Blankt fält
+
+**Input:**
+
+1. Navigera till memberPage
+2. Klicka på edit knappen under valfri medlem
+3. Popupfönster visas
+4. Klicka på Update
+
+**Output:**
+
+1. Systemet presenterar “Password is missing”.
+
+### Testfall Admin 7.2 Admin ändrar medlem. whitespace
+
+**Input:**
+
+1. Navigera till memberPage
+2. Klicka på edit knappen under valfri medlem
+3. Popupfönster visas
+4. New password "    "
+5. Klicka på Update
+
+**Output:**
+
+1. Systemet presenterar “Password is missing”.
+
+### Testfall Admin 7.3 Admin ändrar medlem. taggar
+
+**Input:**
+
+1. Navigera till memberPage
+2. Klicka på edit knappen under valfri medlem
+3. Popupfönster visas
+4. New password "<tagg>Password</tagg>"
+5. Klicka på Update
+
+**Output:**
+
+1. Systemet presenterar "Invalid letters in password"
+
+### Testfall Admin 7.4 Admin ändrar medlem. lösenord för kord
+
+**Input:**
+
+1. Navigera till memberPage
+2. Klicka på edit knappen under valfri medlem
+3. Popupfönster visas
+4. New password "Pass"
+5. Klicka på Update
+
+**Output:**
+
+1. Systemet presenterar "At least 6 letters in your password".
+
+### Testfall Admin 7.5 Admin Lyckas ändrar medlem.
+
+**Input:**
+
+1. Navigera till memberPage
+2. Klicka på edit knappen under valfri medlem
+3. Popupfönster visas
+4. New password "Password"
+5. Klicka på Update
+
+**Output:**
+
+1. Systemet presenterar "The new password have been saved".
+
+### Testfall Admin 8.1 Admin ta bort användare. Popup fönster
+
+**Input:**
+
+1. Trycker på delete hos en medlem.
+
+**Output:**
+
+1. Resultat En popup rutan uppenbarar sig och frågar om man är riktigt säker.
+
+### Testfall Admin 8.2 Admin avbryt ta bort medlem .
+
+**Input:**
+
+1. Trycker på delete hos en medlem.
+2. Popupfönster visas
+3. Klickar på Cancle.
+
+**Output:**
+1. Popuprutan försvinner
+2. Ingen medlem är borta.
+
+### Testfall Admin 8.3 Admin tar bort en medlem .
+
+**Input:**
+
+1. Trycker på delete hos en medlem.
+2. Popupfönster visas
+3. Klickar på Delete.
+
+**Output:**
+1. Popuprutan försvinner
+2. Systemet presenterar “The member has been deleted”. Popuprutan försvinner och medlemen är borta.
+3. En medlem är borta.
 
 
-Admin ändrar, tar bort medlem - memberPage
-Trycker på Update med ett blankt fält.
-Resultat Systemet presenterar “Password is missing”.
-Trycker på Update med whitespace.
-Resultat Systemet presenterar "Invalid letters in password".
-Trycker på Update med taggar.
-Resultat Systemet presenterar "Invalid letters in password"
-Trycker på Update med 5 eller minre bokstäver.
-Result Systemet presenterar "At least 6 letters in your password".
-Trycker på Update med giltiga värden.
-Resultat Systemet presenterar "The new password have been saved".
+Alternativa scenarion URL - Test
 
-Trycker på delete hos en medlem.
-Resultat En popup rutan uppenbarar sig och frågar om man är riktigt säker.
+**Input:**
 
-I delete popuprutan trycker admin på cancel.
-
-Resultat . Popuprutan försvinner och ingen medlem är borta.
-I delete popuprutan trycker admin på Delete.
-
-Resultat  Systemet presenterar “The member has been deleted”. Popuprutan försvinner och ingen medlem är borta.
-
-URL - Test 
  Navigera till sidan. “latana.se/PHP/myFace/”
+ 
+**Output:**
+
 Resultat  Loginsidan visas. 
- Navigera till login-sidan. “latana.se/PHP/myFace/index.php”
+
+**Input:**
+
+Navigera till login-sidan. “latana.se/PHP/myFace/index.php”
+
+**Output:**
+
 Resultat  Loginsidan visas.
+
+**Input:**
+
 Navigera till login-sidan “latana.se/PHP/testing/index.php?login”
+
+**Output:**
+
 Resultat  Loginsidan visas.
+
+**Input:**
+
  Navigera till “latana.se/PHP/myFace/” med cookies aktiva. 
+ 
+**Output:**
+
 Resultat  frontpage visas.
+
+**Input:**
+
  Navigera till “latana.se/PHP/myFace/index.php” med cookies aktiva.
+ 
+ **Output:**
+ 
 Resultat  frontpage visas.
+
+**Input:**
+
  Navigera till “latana.se/PHP/myFace/?userPage” med cookies aktiva.
+ 
+ **Output:**
+ 
 Resultat  userPage visas.
+
+**Input:**
+
  Navigera till “latana.se/PHP/myFace/?memberPage” med cookies aktiva.
+ 
+ **Output**
+ 
 Resultat  memberPage visas.
+
+**Input:**
+
  Navigera till “latana.se/PHP/myFace/?usergallery” med cookies aktiva.
+ 
+ **Output:**
+ 
 Resultat  userPage visas.
+
+**Input:**
+
  Navigera till “latana.se/PHP/myFace/?usergallery=userthatexist” med cookies aktiva.
+ 
+ **Output:**
+ 
 Resultat  usergallery visas.
+
+**Input:**
+
  Navigera till “latana.se/PHP/myFace/?usergallery=userdontexist” med cookies aktiva.
+ 
+ **Output:**
+ 
 Resultat  usergallery visas med texten “The selected user could not be found!”
+
+**Input:**
 
  Navigera till “latana.se/PHP/myFace/?usergalleryusername” med cookies aktiva.
+ 
+ **Output:**
+ 
 Resultat  frontpage visas.
 
+**Input:**
+
  Navigera till “latana.se/PHP/myFace/?usergallery=userdontexist&gallery=5” med cookies aktiva.
+ 
+ **Output:**
+ 
 Resultat  usergallery visas med texten “The selected user could not be found!”
 
+**Input:**
+
  Navigera till “latana.se/PHP/myFace/?usergallery=userexist&gallery=5” med cookies aktiva. Numret existerar inte.
+ 
+ **Output:**
 Resultat  usergallery visas med texten “The selected img could not be found!”
+
+**Input:**
 
  Navigera till “latana.se/PHP/myFace/?usergallery=userexist&gallery=abc” med cookies aktiva. Numret existerar inte.
+ 
+ **Output:**
+ 
 Resultat  usergallery visas med texten “The selected img could not be found!”
 
+**Input:**
+
  Navigera till “latana.se/PHP/myFace/?usergallery=userexist=abc” med cookies aktiva.
+ 
+ **Output:**
+ 
 Resultat  usergallery visas.
 
+**Input:**
+
  Navigera till “latana.se/PHP/myFace/?usergallery” med cookies aktiva.
+ 
+ **Output:**
+ 
 Resultat  usergallery visas med texten “The selected user could not be found!”.
 
+**Input:**
 
  Navigera till “latana.se/PHP/myFace/?usergallery” ingen session eller cookies.
+ 
+ **Output:**
+ 
 Resultat  Loginsidan visas.
 
+**Input:**
+
  Navigera till “latana.se/PHP/myFace/?wrongsite” ingen session eller cookies.
+ 
+ **Output:**
+ 
 Resultat  errorsidan visas med meddelandet “The page cannot be found or an unexpected error has accerd. Please click on the home link and try again”.
 
+**Input:**
+
  Navigera till “latana.se/PHP/myFace/index.php?wrongsite” ingen session eller cookies.
+ 
+ **Output:**
 Resultat  frontPage visas.
-
-!!!ADMIN!!!
-
-Admin tar bort någon annans post.
-Resultat Post tas bort. Systemet presenterar “Your post has been deleted”.
-Admin uppdaterar någon annans post.
-Resultat Kommentaren uppdateras.
-
-Admin tar bort någon annans kommentar.
-Resultat Kommentar tas bort. Systemet presenterar “Your comment has been deleted”.
-
