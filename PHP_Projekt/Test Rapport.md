@@ -73,6 +73,9 @@ Ok
 ### Testfall 2.14 Logga ut
 Ok
 
+### Testfall 2.15 Ändra tid i cookies
+Ok
+
 ### Testfall 3.1 Postar en post
 Ok
 
