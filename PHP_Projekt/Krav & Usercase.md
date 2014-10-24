@@ -43,7 +43,7 @@ bara meddela om nya bilder som de laddat upp.
 3.	Admin ändrar i en medlems kommentar.
 4.	Admin tar bort en medlems kommentar.
 5.	Admin ändrar en medlems bild från galleri
-3.	Admin tar bort en medlems bild ifrån galleri.
-4.	Admin ändrar en medlems lösenord
-4.	Admin tar bort en medlem. 
+6.	Admin tar bort en medlems bild ifrån galleri.
+7.	Admin ändrar en medlems lösenord
+8.	Admin tar bort en medlem. 
 
