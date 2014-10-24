@@ -390,8 +390,21 @@
 
 **Output:**
 
-1. Kommentaren blir postad med bilden.
+1. Posten blir postad med bilden.
 
+### Testfall 3.7 Laddar om sidan
+
+**Input:**
+
+1. Textbox "Jag är en post"
+2. Klicka på (chrome) "Choose file" (firefox) "Browse" knappen
+3. Välj en bild av typen jpg.
+4. Klicka på Post
+5. Laddar om sidan med F5
+
+**Output:**
+
+1. Ingenting händer
 
 ### Testfall 4.1 Delete post
 
@@ -403,7 +416,7 @@
 **Output:**
 
 1. Systemet presenterar “Your post has been deleted”.
-2. Både bild och kommentar tas bort.
+2. Både bild och post tas bort.
 
 ### Testfall 4.2 Misslyckad delete av andras post
 
@@ -463,7 +476,7 @@
 1. Popup fönster visas 
 2. Textbox med text av den post som skulle ändras.
 
-### Testfall 5.2 Lyckad ändrad kommentar
+### Testfall 5.2 Lyckad ändrad post
 
 **Input:**
 
@@ -1147,7 +1160,6 @@ Resultat Systemet presenterar "The new password have been saved".
 **Output:**
 
 1. Ingen bild tas bort.
-2. 
 
 ### Testfall 11.1 Kommentera bild. Navigera till bild 
 
@@ -1215,6 +1227,20 @@ Resultat Systemet presenterar "The new password have been saved".
 1. Systemet presenterar "Please write somthing".
 2. Ingen kommentar blev postad.
 
+### Testfall 11.6 Kommentera bild. Ladda om sidan
+
+**Input:**
+
+1. Klicka på en bild.
+2. Popupfönster visas
+3. Textbox "Jag är en kommentar"
+4. Klicka på Comment
+5. Ladda om sidan med F5
+
+**Output:*
+
+1. Ingenting händer
+
 ### Testfall 12.1 Delete kommentar
 
 **Input:**
@@ -1272,7 +1298,7 @@ Resultat Systemet presenterar "The new password have been saved".
 **Output:**
 
 1. Systemet presenterar "Your comment has been updated"
-2. Ett popup fönser visas med kommentaren i en textbox.
+2. Ett popup fönser visas med bild och kommentarer.
 
 ### Testfall 13.3 Edit kommentar. Misslyckad ändra en annan medlems kommentar
 
@@ -1320,7 +1346,7 @@ Resultat Systemet presenterar "The new password have been saved".
 1. Popup fönster visas 
 2. Textbox med text av den post som skulle ändras.
 
-### Testfall Admin 1.2 Lyckad ändrad medlems kommentar
+### Testfall Admin 1.2 Lyckad ändrad medlems post
 
 **Input:**
 
@@ -1414,22 +1440,65 @@ Resultat Systemet presenterar "The new password have been saved".
 1. Systemet presenterar “Your post has been deleted”.
 2. Posten togs bort
 
+### Testfall Admin 3.1 Edit kommentar. Popupfönster
+
+**Input:**
+
+1. Navigera till en medlems galleri.
+2. Klicka på en bild med kommentarer.
+3. Klicka på edit under en medlems kommentar.
+
+**Output:**
+
+1. Ett popup fönser visas med medlemens kommentar i en textbox.
+
+### Testfall Admin 3.2 Edit kommentar. Lyckad Ändrad medlems kommentar
+
+**Input:**
+
+1. Navigera till medlemens galleri.
+2. Klicka på en medlems bild med kommentarer.
+3. Klicka på edit under en medlems kommentar.
+4. Textbox "Jag heter Admin"
+5. Klicka på Edit
+
+**Output:**
+
+1. Systemet presenterar "Your comment has been updated"
+2. Ett popup fönser visas med medlemmarnas kommentarer.
+
+
+### Testfall Admin 3.3 Edit kommentar. Avbryt ändring av kommentar
+
+**Input:**
+
+1. Navigera till medlemmens galleri.
+2. Klicka på en bild med kommentarer.
+3. Klicka på edit under en medlems kommenta.
+4. Textbox "Jag är en kommentar"
+5. Klicka på X knappen
+
+**Output:**
+
+1. Popup fönstret försvinner
+2. Ingen kommentar är ändrad
+
+### Testfall Admin 4.1 Delete medlems kommentar
+
+**Input:**
+
+1. Klicka på en bild
+2. Klicka på delete under medlems kommentar
+
+**Output:**
+
+1. Systemet presenterar “Your comment has been deleted”.
+2. Kommentar är borta.
 
 
 
 
-Admin uppdaterar någon annans post.
-Resultat Systemet presenterar “Your comment has been updated”. Kommentaren uppdateras.
-Laddar upp en fil som inte är jpg, png eller jpeg och en post.
-Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.” Ingen post blev skapad
-Laddar upp en och ändrar bild namn från test.png till test.jpg och en post.
-Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.” Ingen post blev skapad.
-Laddar upp en och ändrar bild namn från test.jpg till test.png och en post.
-Resultat Systemet presenterar “Invalid file! Please make sure the file is of type png, jpg or jpeg and that the img format is the same as the img type.” Ingen post blev skapad.
-Laddar upp en bild som är större än 3 mb
-Resultat Systemet presenterar “The picture is to big. No more than 3 mb!”
-Laddar upp en post och trycker sedan på F5.
-Resultat Ingen duplisering ut av kommentaren.
+
 
 
 Admin ändrar, tar bort medlem - memberPage
