@@ -1,5 +1,5 @@
 #TestFall
-Ok
+
 
 ###Testfall 1.2 Misslyckad registrering med endast giltigt användarnamn.
 Ok
