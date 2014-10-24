@@ -1876,7 +1876,7 @@ Resultat: userPage visas.
  
 Resultat: usergallery visas.
 
- ### Testfall 14.10
+### Testfall 14.10
 
 **Input:**
 
