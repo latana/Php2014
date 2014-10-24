@@ -10,5 +10,7 @@ Jag är inte heller nöjd med hur min postView frågar sig själv om användaren
 
 Jag anser att jag misslyckades lite med min struktur mellan mina views och masterview. Tanken var att alla skulle ärva från den men det blev lite strul sen när controllerna kommunicerade med varandra.
 
+Mina tester går igenom vilket gör mig maranoid om det verkligen är bra tester. Det är första gången jag testar på denna storleken och det har varit svårt att få ihopa tiden. Men för övrigt har jag inte hittat några buggar vilket gör mig lite rädd.
 
+Alla mina "Popup fönster" göra jag på lite olika vis. Det är dels för att jag inte hitta något bra sätt för controllern och viewn att hantera popup fönster. Det funkar väl men enligt mig så är det inte det snyggaste.
 
