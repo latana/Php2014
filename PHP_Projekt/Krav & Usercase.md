@@ -1,9 +1,11 @@
 #MyFace
 ##Beskrivning
-Nya medlemmar ska kunna skapa nytt konto och sedan logga in.
+MyFace är en bildblogg där nya medlemmar ska kunna skapa nytt konto och sedan logga in.
 De olika användarna ska kunna titta på varandras galleri och ge feedback om de så önskar.
 Det ska också finnas en central platts där användare ska kunna läsa om uppdateringar eller
-bara meddela om nya bilder som de laddat upp.
+bara meddela om nya bilder som de laddat upp. Där stora forum eller bildbloggar innehåller
+mycket som distraherar är det MyFace styrka att vara en lätt och enkel webbplatts.
+
 
 ##Krav
 1.	Funktionell registrering och login.
