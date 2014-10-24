@@ -1308,7 +1308,88 @@ Resultat Systemet presenterar "The new password have been saved".
 2. Ingen kommentar är ändrad
 
 
-###Testfall Admin 1.1 Ändra en medlemms post
+### Testfall Admin 1.1 Klickar på edit
+
+**Input:**
+
+1. Lägg upp en post
+2. Tryck på Edit i posten
+
+**Output:**
+
+1. Popup fönster visas 
+2. Textbox med text av den post som skulle ändras.
+
+### Testfall 1.2 Lyckad ändrad medlems kommentar
+
+**Input:**
+
+1. Klicka på Edit knappen i posten
+2. Ändra innehållet i textrutan.
+3. Klicka på Edit
+
+**Output:**
+
+1. Systemet presenterar “Your post has been updated”.
+2. Post är ändrad
+
+
+### Testfall 1.3 Avbruten edit
+
+**Input:**
+
+1. Trycker på edit i medlemens post.
+2. Ändra innehållet i textrutan.
+3. Klicka på X knappen.
+
+**Output:**
+
+1. Fönstret försvinner
+2. Ingen post är ändrad.
+
+
+### Testfall 1.4 Popup fönster i userPage
+
+**Input:**
+
+1. Klicka på edit knappen inne i en post
+
+**Output:**
+
+1. Ett popup fönster visas
+2. Textbox med text på den post som skulle ändras.
+
+### Testfall 1.5 Lyckad ändring av post i userpage
+
+**Input:**
+
+1. Klickar på edit knappen i en post
+2. Popup rutan visas
+3. Ändrar innehållet i textrutan
+4. Klickar på Edit
+
+**Output:**
+
+1. Systemet presenterar “Your post has been updated”
+2. Post är ändrad
+
+
+### Testfall 1.6 Avbruten edit i userPage
+
+**Input:**
+
+1. Navigera till userpage
+2. Trycker på edit i posten.
+3. Ändra innehållet i textrutan.
+4. Klicka på X knappen.
+
+**Output:**
+
+1. Fönstret försvinner
+2. Ingen post är ändrad.
+
+
+
 
 Admin uppdaterar någon annans post.
 Resultat Systemet presenterar “Your comment has been updated”. Kommentaren uppdateras.
