@@ -1774,16 +1774,17 @@ Resultat Systemet presenterar "The new password have been saved".
 **Input:**
 
 1. Trycker på delete hos en medlem.
-2. Popupfönster visas
+2. Popupfönster visas.
 3. Klickar på Delete.
 
 **Output:**
-1. Popuprutan försvinner
+
+1. Popuprutan försvinner.
 2. Systemet presenterar “The member has been deleted”. Popuprutan försvinner och medlemen är borta.
 3. En medlem är borta.
 
 
-Alternativa scenarion URL - Test
+### Alternativa scenarion URL - Test
 
 **Input:**
 
