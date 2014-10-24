@@ -1308,8 +1308,8 @@ Resultat Systemet presenterar "The new password have been saved".
 2. Ingen kommentar är ändrad
 
 
-Admin tar bort någon annans kommentar.
-Resultat Kommentar tas bort. Systemet presenterar “Your comment has been deleted”.
+###Testfall Admin 1.1 Ändra en medlemms post
+
 Admin uppdaterar någon annans post.
 Resultat Systemet presenterar “Your comment has been updated”. Kommentaren uppdateras.
 Laddar upp en fil som inte är jpg, png eller jpeg och en post.
@@ -1402,4 +1402,7 @@ Admin tar bort någon annans post.
 Resultat Post tas bort. Systemet presenterar “Your post has been deleted”.
 Admin uppdaterar någon annans post.
 Resultat Kommentaren uppdateras.
+
+Admin tar bort någon annans kommentar.
+Resultat Kommentar tas bort. Systemet presenterar “Your comment has been deleted”.
 
