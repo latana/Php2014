@@ -458,3 +458,24 @@ Ok
 
 ### Testfall 14.19
 Ok
+
+### Testfall 15.1 HTML Validering
+Ok
+
+### Testfall 15.2 HTML Validering
+Ok
+
+### Testfall 15.3 HTML Validering
+Ok
+
+### Testfall 15.4 HTML Validering
+Ok
+
+### Testfall 15.5 HTML Validering
+Ok
+
+### Testfall 15.6 HTML Validering
+Ok
+
+### Testfall 15.7 HTML Validering
+Ok
