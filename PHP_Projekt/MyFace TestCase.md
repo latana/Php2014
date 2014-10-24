@@ -2003,31 +2003,31 @@ Se till att genererad HTML/CSS validerar enligt http://validator.w3.org/
 
 1. Validera http://latana.se/PHP/MyFace/index.php?register
 
-### Testfall 15.2 HTML Validering
+### Testfall 15.3 HTML Validering
 
 Se till att genererad HTML/CSS validerar enligt http://validator.w3.org/
 
 1. Validera http://latana.se/PHP/MyFace/index.php?frontPage
 
-### Testfall 15.3 HTML Validering
+### Testfall 15.4 HTML Validering
 
 Se till att genererad HTML/CSS validerar enligt http://validator.w3.org/
 
 1. Validera http://latana.se/PHP/MyFace/index.php?memberPage
 
-### Testfall 15.4 HTML Validering
+### Testfall 15.5 HTML Validering
 
 Se till att genererad HTML/CSS validerar enligt http://validator.w3.org/
 
 1. Validera http://latana.se/PHP/MyFace/index.php?userpage
 
-### Testfall 15.5 HTML Validering
+### Testfall 15.6 HTML Validering
 
 Se till att genererad HTML/CSS validerar enligt http://validator.w3.org/
 
 1. Validera http://latana.se/PHP/MyFace/index.php?usergallery=Username
 
-### Testfall 15.5 HTML Validering
+### Testfall 15.7 HTML Validering
 
 Se till att genererad HTML/CSS validerar enligt http://validator.w3.org/
 
