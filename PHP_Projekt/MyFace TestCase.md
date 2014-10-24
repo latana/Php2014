@@ -1906,7 +1906,7 @@ Resultat  frontpage visas.
  
 Resultat  usergallery visas med texten “The selected user could not be found!”
 
-### Testfall 14.12
+### Testfall 14.13
 
 **Input:**
 
@@ -1915,7 +1915,7 @@ Resultat  usergallery visas med texten “The selected user could not be found!�
  **Output:**
 Resultat  usergallery visas med texten “The selected img could not be found!”
 
-### Testfall 14.13
+### Testfall 14.14
 
 **Input:**
 
@@ -1925,7 +1925,7 @@ Resultat  usergallery visas med texten “The selected img could not be found!�
  
 Resultat  usergallery visas med texten “The selected img could not be found!”
 
-### Testfall 14.14
+### Testfall 14.15
 
 **Input:**
 
@@ -1935,7 +1935,7 @@ Resultat  usergallery visas med texten “The selected img could not be found!�
  
 Resultat  usergallery visas.
 
-### Testfall 14.15
+### Testfall 14.16
 
 **Input:**
 
@@ -1945,7 +1945,7 @@ Resultat  usergallery visas.
  
 Resultat  usergallery visas med texten “The selected user could not be found!”.
 
-### Testfall 14.16
+### Testfall 14.17
 
 **Input:**
 
@@ -1955,7 +1955,7 @@ Resultat  usergallery visas med texten “The selected user could not be found!�
  
 Resultat  Loginsidan visas.
 
-### Testfall 14.17
+### Testfall 14.18
 
 **Input:**
 
@@ -1965,7 +1965,7 @@ Resultat  Loginsidan visas.
  
 Resultat  errorsidan visas med meddelandet “The page cannot be found or an unexpected error has accerd. Please click on the home link and try again”.
 
-### Testfall 14.18
+### Testfall 14.19
 
 **Input:**
 
