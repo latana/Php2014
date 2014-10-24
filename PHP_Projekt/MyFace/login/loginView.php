@@ -56,17 +56,11 @@ class LoginView extends \masterView\MasterView {
 	 * @var string
 	 */
 	private static $indexPath;
-	
-	/**
-	 * @var string
-	 */
-	private static $notlogedinpics;
 
 	public function __construct(){
 		
 		self::$login = \settings\Settings::$login;
 		self::$indexPath = \settings\Settings::$indexPath;
-		self::$notlogedinpics = \settings\Settings::$notlogedinpics;
 	}
 	
 	/**
@@ -245,7 +239,6 @@ class LoginView extends \masterView\MasterView {
 							<input type='submit' name='" . self::$loginButton . "'  value='Log in' />
 						</fieldset>
 					</form>
-					".self::$notlogedinpics."
 					</div>";
 
 		$this -> rendHTML($content);

@@ -228,17 +228,4 @@ class Settings{
 	 * @var string
 	 */	
 	public static $cookiePass = "CookiePass";
-	
-	
-	/**
-	 * @var string
-	 */
-	public static $notlogedinpics = "<div class='picDiv'>
-										<img class = 'pic' src='upload/13961937-baby-on-white-background-look-up.jpg' alt = 'pic'>
-										<img class = 'pic' src='upload/1385971401604.jpg' alt = 'pic'>
-										<img class = 'pic' src='upload/eyes-300x200.jpg' alt = 'pic'>
-										<img class = 'pic' src='upload/gen-looking-up-cinder-cowl.jpg' alt = 'pic'>
-										<img class = 'pic' src='upload/lookingup.jpg' alt = 'pic'>
-										<img class = 'pic' src='upload/baby_look_up_400-297x300.jpg' alt = 'pic'>
-									</div>";
 }

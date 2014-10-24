@@ -53,12 +53,6 @@ require_once 'settings.php';
 		 */		
 		private $str = '';
 
-
-		 /**
-		 * @var string
-		 */		
-		private static $notlogedinpics;
-
 		 /**
 		 * @var string
 		 */		
@@ -71,7 +65,6 @@ require_once 'settings.php';
 		
 		public function __construct(){
 			
-			self::$notlogedinpics = \settings\Settings::$notlogedinpics;
 			self::$location = \settings\Settings::$location;
 			self::$PHP_SELF = \settings\Settings::$PHP_SELF;
 		}
@@ -195,7 +188,6 @@ require_once 'settings.php';
 						<input type='submit' name='".self::$regButton."'  value='".self::$regButton."' />
 					</fieldset>
 				</form>
-			".self::$notlogedinpics."
 			</div>";
 
 			$this->rendHTML($content);
