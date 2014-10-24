@@ -1,5 +1,5 @@
 
-## Installation localt
+## Installation
 
 1. Ladda hem MyFace och lägg filerna på lämplig platts.
 2. Ladda upp filen "myface.sql" till din lokala databas och se till att den exekvera.
