@@ -1149,7 +1149,7 @@ Resultat Systemet presenterar "The new password have been saved".
 1. Ingen bild tas bort.
 2. 
 
-### Testfall 11.1 Navigera till bild 
+### Testfall 11.1 Kommentera bild. Navigera till bild 
 
 **Input:**
 
@@ -1161,19 +1161,62 @@ Resultat Systemet presenterar "The new password have been saved".
 1. Popup rutan visas
 2. Bilden och kommentarer presenteras i popupruta.
 
-### Testfall 11.2 
+### Testfall 11.2 Kommentera bild. Posta en kommentar
 
+**Input:**
 
+1. Klicka på en bild.
+2. Popupfönster visas
+3. Textbox "Jag är en kommentar"
+4. Klicka på Comment
 
+**Output:*
 
-Postar en kommentar.
-Resultat kommentaren blir postad.
-Posta en tom kommentar.
-Resultat Systemet presenterar "Please write somthing".
-Postar med taggar
-Resultat Systemet presenterar “Please avoid using taggs”.
-Postar med whitespace
-Resultat Systemet presenterar "Please write somthing".
+1. En kommentar visas över i listan.
+
+### Testfall 11.3 Kommentera bild. Posta en tom kommentar
+
+**Input:**
+
+1. Klicka på en bild.
+2. Popupfönster visas
+4. Klicka på Comment
+
+**Output:*
+
+1. Systemet presenterar "Please write somthing".
+2. Ingen kommentar blev postad.
+
+### Testfall 11.4 Kommentera bild. Posta en kommentar med taggar
+
+**Input:**
+
+1. Klicka på en bild.
+2. Popupfönster visas
+3. Textbox "<tag>jag är en kommentar</tag>"
+4. Klicka på Comment
+
+**Output:*
+
+1. Systemet presenterar Systemet presenterar “Please avoid using taggs”.
+2. Ingen kommentar blev postad.
+
+### Testfall 11.5 Kommentera bild. Posta en kommentar med whitespace
+
+**Input:**
+
+1. Klicka på en bild.
+2. Popupfönster visas
+3. Textbox "     "
+4. Klicka på Comment
+
+**Output:*
+
+1. Systemet presenterar "Please write somthing".
+2. Ingen kommentar blev postad.
+
+### Testfall 12.1
+
 Klickar på delete.
 Resultat Kommentar tas bort Systemet presenterar “Your comment has been deleted”.
 Ändrar den gömda knappens value till ett annat existerande och klickar på Delete
