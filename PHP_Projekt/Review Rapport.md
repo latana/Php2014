@@ -14,3 +14,5 @@ Mina tester går igenom vilket gör mig paranoid om det verkligen är bra tester
 
 Alla mina "Popup fönster" gör jag på lite olika vis. Det är dels för att jag inte hittade något bra sätt för controllern och viewn att hantera popup fönster. Det funkar väl men enligt mig så är det inte det snyggaste.
 
+I min postDAL har hand om att ta bort en användare och allting relaterat till denna användare. Jag vill att varje DAL klass ska ha hand om var sin tabell och det finns andra sätt jag kunde gjort men ingen som jag kände var tillräckligt bra.
+
