@@ -6,6 +6,8 @@ Det ska också finnas en central platts där användare ska kunna läsa om uppda
 bara meddela om nya bilder som de laddat upp. Där stora forum eller bildbloggar innehåller
 mycket som distraherar är det MyFace styrka att vara en lätt och enkel webbplatts.
 
+Pga att det finns lagar mot lägga upp vissa opasande bilder har MyFace beslutat att alla bilder som läggs upp behålls på servern även när användaren tar bort eller byta sin bild. Det finns många sätt att spara information men vi på MyFace håller oss till att en bild är mer än tusen or. Skulle en användare göra en anmälan om något sådant kan vi själva titta i den angivna användarens katalog och avgöra själva.
+
 
 ##Krav
 1.	Funktionell registrering och login.
