@@ -580,7 +580,7 @@ class GalleryPageView{
 			<form class = 'EditgalleryForm' method='post' enctype='multipart/form-data'>
 				<div class='editTitleDiv'>
 					<label class ='editTitleLable'>New Title :</label>
-					<input class='editTitleInput' type='text' size='20' name='".self::$editTitle."'id='".self::$editTitle."
+					<input class='editTitleInput' type='text' size='20' maxlength='34' name='".self::$editTitle."'id='".self::$editTitle."
 																				'value='".$gallery->getgalleryPicName()."'/>
 				</div>
 				<div class='editDescriptionDiv'>
@@ -607,7 +607,7 @@ class GalleryPageView{
 		return "<div class = 'divGallery'>
 					<form class = 'galleryForm' method='post' enctype='multipart/form-data'>
 						<label>Title :</label>
-						<input type='text' size='20' name='" . self::$galleryName . "' id='" . self::$galleryName . "' value= ''/>
+						<input type='text' size='20' maxlength='34' name='" . self::$galleryName . "' id='" . self::$galleryName . "' value= ''/>
 						<label>Description :</label>
 						<textarea class = 'posttextarea' name='" . self::$description . "' rows='3' cols='25'></textarea>
 						<label class = 'piclabel'></label>
