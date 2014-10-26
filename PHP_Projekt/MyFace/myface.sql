@@ -31,7 +31,7 @@ USE `myface`;
 CREATE TABLE IF NOT EXISTS `gallery` (
   `GalleryID` int(11) NOT NULL AUTO_INCREMENT,
   `Username` varchar(25) CHARACTER SET swe7 NOT NULL,
-  `Picname` varchar(25) COLLATE swe7_bin NOT NULL,
+  `Picname` varchar(35) COLLATE swe7_bin NOT NULL,
   `URL` varchar(250) COLLATE swe7_bin NOT NULL,
   `Piccomment` text COLLATE swe7_bin,
   `Date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
